@@ -76,9 +76,9 @@ def eval_scorer(result_path):
 if __name__ == "__main__":
     # 生成对比样本
     # contrastive_pair(
-    #     positive_path="/media/a822/82403B14403B0E83/Gwb/WechatRobot/data/v1.0/Single_train.json", 
-    #     negative_path="/media/a822/82403B14403B0E83/Gwb/WechatRobot/data/Gen_single_train.json", 
-    #     save_path="/media/a822/82403B14403B0E83/Gwb/WechatRobot/data/eval/contrastive.json", 
+    #     positive_path="../data/v1.0/Single_train.json",
+    #     negative_path="../data/Gen_single_train.json",
+    #     save_path="../data/eval/contrastive.json",
     #     pairs_num=4000)
 
     # # 训练打分模型
@@ -90,4 +90,3 @@ if __name__ == "__main__":
     # eval_scorer("./test_result_V3.json")
     # eval_scorer("./test_result_V4.json")
     # eval_scorer("./test_result_V5.json")
-

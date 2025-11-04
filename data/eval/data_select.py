@@ -1,8 +1,14 @@
-import pandas as pd
 import random
+from pathlib import Path
+
 import numpy as np
-from sentence_transformers import SentenceTransformer, losses, InputExample
+import pandas as pd
+from sentence_transformers import InputExample, SentenceTransformer, losses
 from torch.utils.data import DataLoader
+
+PROJECT_ROOT = Path(__file__).resolve().parents[2]
+EVAL_DIR = Path(__file__).resolve().parent
+TEXT2VEC_DIR = PROJECT_ROOT / "evaluation" / "text2vec-base-chinese"
 
 
 
@@ -46,7 +52,7 @@ def train_scorer():
 class Scorer:
     def __init__(self):
         # self.model = SentenceTransformer("./scorer_model")
-        self.model = SentenceTransformer("/media/a822/82403B14403B0E83/Gwb/WechatRobot/evaluation/text2vec-base-chinese")
+        self.model = SentenceTransformer(str(TEXT2VEC_DIR))
     def __call__(self, text1, text2):
         return self.similarity(text1, text2)
     def similarity(self, text1, text2):
@@ -83,5 +89,4 @@ def conversations_scorer(result_path):
     
     
 if __name__ == "__main__":
-
-    conversations_scorer("./data/eval/Single_text.json")
+    conversations_scorer(str(EVAL_DIR / "Single_text.json"))

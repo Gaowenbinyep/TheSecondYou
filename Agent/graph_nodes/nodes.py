@@ -1,24 +1,37 @@
-from langchain_openai import ChatOpenAI
-from langgraph.graph import StateGraph
-from langchain import hub
-from langgraph.prebuilt import ToolNode
-from langchain.agents import create_react_agent, AgentExecutor
-
-
-from agent.prompts import style_prompt, router_prompt, chat_prompt
-from tools import get_weather, web_search, get_current_time
+import os
+from pathlib import Path
 from typing import TypedDict
 
-openai_api_key = "EMPTY"
-openai_api_base = "http://localhost:8888/v1"
-model_name = "/media/a822/82403B14403B0E83/Gwb/WechatRobot/Saved_models/rlhf/4B_lora_PPO_V3/merged"
+from langchain import hub
+from langchain.agents import AgentExecutor, create_react_agent
+from langchain.callbacks.base import BaseCallbackHandler
+from langchain_openai import ChatOpenAI
+from langgraph.graph import StateGraph
 
-router_openai_api_key="<your_api_key>"
-router_openai_api_base="https://dashscope.aliyuncs.com/compatible-mode/v1"
-router_model_name = "qwen-max"
+from agent.prompts import chat_prompt, router_prompt, style_prompt
+from tools import drink_ordering, get_current_time, get_weather, web_search
+
+BASE_DIR = Path(__file__).resolve().parents[2]
+
+openai_api_key = os.getenv("OPENAI_API_KEY", "EMPTY")
+openai_api_base = os.getenv("OPENAI_API_BASE", "http://localhost:8888/v1")
+model_name = os.getenv(
+    "WECHATROBOT_MODEL_PATH",
+    str(BASE_DIR / "Saved_models" / "rlhf" / "4B_lora_PPO_V3" / "merged"),
+)
+
+router_openai_api_key = os.getenv(
+    "ROUTER_OPENAI_API_KEY",
+    "ROUTER_KEY_PLACEHOLDER",
+)
+router_openai_api_base = os.getenv(
+    "ROUTER_OPENAI_API_BASE",
+    "https://dashscope.aliyuncs.com/compatible-mode/v1",
+)
+router_model_name = os.getenv("ROUTER_MODEL_NAME", "qwen-max")
 
 
-tools = [get_weather, web_search, get_current_time]
+tools = [get_weather, web_search, get_current_time, drink_ordering]
 
 llm = ChatOpenAI(
     api_key=openai_api_key,
@@ -46,6 +59,13 @@ router_llm = ChatOpenAI(
     }
 )
 
+class PromptLoggerCallback(BaseCallbackHandler):
+    def on_llm_start(self, serialized, prompts, **kwargs):
+        """LLM 调用开始时触发，打印完整 prompt"""
+        print("\n===== 发送给大模型的完整 Prompt =====")
+        for prompt in prompts:
+            print(prompt)  # 打印每个 prompt（通常只有一个）
+        print("=====================================\n")
 
 prompt = hub.pull("hwchase17/react")
 agent = create_react_agent(llm, tools, prompt)
@@ -53,6 +73,7 @@ agent_executor = AgentExecutor(
     agent=agent, 
     tools=tools, 
     verbose=True,
+    callbacks=[PromptLoggerCallback()],
     handle_parsing_errors=True
 )
 

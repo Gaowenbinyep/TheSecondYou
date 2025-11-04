@@ -1,10 +1,15 @@
-import pandas as pd
 import random
-import numpy as np
-from tqdm import tqdm
-from sentence_transformers import SentenceTransformer, losses, InputExample
-from torch.utils.data import DataLoader
+from pathlib import Path
 
+import numpy as np
+import pandas as pd
+from sentence_transformers import InputExample, SentenceTransformer, losses
+from torch.utils.data import DataLoader
+from tqdm import tqdm
+
+PROJECT_ROOT = Path(__file__).resolve().parents[1]
+DATA_DIR = Path(__file__).resolve().parent
+TEXT2VEC_DIR = PROJECT_ROOT / "evaluation" / "text2vec-base-chinese"
 
 
 def contrastive_pair(positive_path, negative_path, save_path, pairs_num):
@@ -47,7 +52,7 @@ def train_scorer():
 class Scorer:
     def __init__(self):
         # self.model = SentenceTransformer("./scorer_model")
-        self.model = SentenceTransformer("/media/a822/82403B14403B0E83/Gwb/WechatRobot/evaluation/text2vec-base-chinese")
+        self.model = SentenceTransformer(str(TEXT2VEC_DIR))
     def __call__(self, text1, text2):
         return self.similarity(text1, text2)
     def similarity(self, text1, text2):
@@ -84,5 +89,6 @@ def conversations_scorer(result_path, save_path):
     
     
 if __name__ == "__main__":
-
-    conversations_scorer("/media/a822/82403B14403B0E83/Gwb/WechatRobot/data/v1.0/LCCC_single_train.json", "./v3.0/LCCC_single_train.json")
+    input_path = DATA_DIR / "v1.0" / "LCCC_single_train.json"
+    output_path = DATA_DIR / "v3.0" / "LCCC_single_train.json"
+    conversations_scorer(str(input_path), str(output_path))

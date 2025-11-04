@@ -1,12 +1,16 @@
-import sys
-import os
-import pandas as pd
 import asyncio
+import os
+import sys
+from pathlib import Path
+
+import pandas as pd
+from openai import AsyncOpenAI, OpenAI
 from tqdm.asyncio import tqdm
-from openai import OpenAI, AsyncOpenAI
-current_dir = os.path.dirname(os.path.abspath(__file__))
-parent_dir = os.path.dirname(current_dir)  # 上层目录路径
-sys.path.append(parent_dir)
+
+current_dir = Path(__file__).resolve().parent
+parent_dir = current_dir.parent  # 上层目录路径
+sys.path.append(str(parent_dir))
+DATA_DIR = parent_dir / "data"
 
 from PROMPT import gen_promot, parse_gen_result
 
@@ -82,10 +86,10 @@ async def data_generation(source_path, target_path):
 
 
 if __name__ == "__main__":
-    # source_path = "/media/a822/82403B14403B0E83/Gwb/WechatRobot/data/Gen/Single_train.json"
-    # target_path = "/media/a822/82403B14403B0E83/Gwb/WechatRobot/data/Gen/Single_train_gen.json"
-    # asyncio.run(data_generation(source_path, target_path))
-    datas = pd.read_json("/media/a822/82403B14403B0E83/Gwb/WechatRobot/data/v1.0/LCCC_single_train.json", lines=True)
+    # source_path = DATA_DIR / "Gen" / "Single_train.json"
+    # target_path = DATA_DIR / "Gen" / "Single_train_gen.json"
+    # asyncio.run(data_generation(str(source_path), str(target_path)))
+    datas = pd.read_json(DATA_DIR / "v1.0" / "LCCC_single_train.json", lines=True)
     new_datas = datas.sample(frac=1).reset_index(drop=True)
     # new_datas = []
     # for _, data in tqdm(datas.iterrows(), total=len(datas)):
@@ -102,7 +106,7 @@ if __name__ == "__main__":
     #         })
         
     pd.DataFrame(new_datas).to_json(
-        "/media/a822/82403B14403B0E83/Gwb/WechatRobot/data/PPO/Single_train_gen.json",
+        DATA_DIR / "PPO" / "Single_train_gen.json",
         orient="records",
         lines=True,
         force_ascii=False

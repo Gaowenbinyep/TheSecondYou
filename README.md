@@ -1,237 +1,153 @@
 # WechatRobot
 
-一个基于大语言模型（LLM）的智能微信机器人项目，支持工具调用（天气查询、网页搜索等）、自定义工作流和本地模型部署，可通过自然语言交互完成多种任务。
-微调时，别忘了将<your_name>修改成你的名字~
----
-
-## 目录
-
-- [项目简介](#项目简介)
-- [项目结构](#项目结构)
-- [核心功能](#核心功能)
-- [环境配置](#环境配置)
-- [使用指南](#使用指南)
-- [工作流详解](#工作流详解)
-- [模型微调与评估](#模型微调与评估)
-- [常见问题](#常见问题)
-- [依赖说明](#依赖说明)
-- [致谢](#致谢)
+微信恋爱陪伴场景下的中文对话机器人与强化学习流水线，开箱即用地提供数据处理、微调、PPO、Agent 工具链，并预置本地 vLLM 推理接口。仓库现已内置三份零依赖入口脚本，帮助初学者无需深入整个项目结构即可快速体验核心功能。
 
 ---
 
-## 项目简介
+## 🚀 快速上手
 
-WechatRobot 是一个模块化的智能对话系统，核心功能包括：
+| 功能 | 命令 | 说明 |
+| --- | --- | --- |
+| 监督微调 (SFT) | `python run_finetune.py` | 调用 LLaMA-Factory 默认配置，对 `data/v1.0/Single_train.json` 进行全量微调。 |
+| PPO 训练 | `python run_ppo.py` | 启动自定义 PPO 训练器，日志输出到 `logs/ppo_train.log`。 |
+| 智能 Agent | `python run_agent.py` | 打开 LangGraph 工作流 Agent 交互式会话（默认连接本地 vLLM）。 |
 
-- **工具集成**：通过 LangChain 框架整合天气查询、实时搜索、时间获取等工具。
-- **工作流引擎**：基于 LangGraph 构建状态机工作流，支持用户输入、路由决策、工具调用和对话生成的自动化流程。
-- **本地模型部署**：使用 vLLM 部署本地微调的 LLM 模型，支持高效推理。
-- **数据处理与微调**：提供数据清洗、格式转换和基于 LLaMA-Factory 的模型微调脚本。
-
----
-
-## 项目结构
-
-WechatRobot/
-├── Agent/                  
-│   ├── graph_nodes/        
-│   │   └── nodes.py        
-│   ├── prompts/            
-│   └── tools/              
-│       ├── tools.py        
-│       └── weather.py      
-├── data/                   
-│   ├── v0.0/               
-│   └── LCCC/               
-├── evaluation/             
-│   ├── sim_eva.py          
-│   └── test_result_*.json  
-├── LLaMA-Factory/          
-├── Saved_models/           
-│   └── rlhf/4B_lora_PPO_V3/merged  
-├── logs/                   
-├── model_deploy.sh         
-├── data_process.py         
-└── requirements.txt        
+> 所有脚本都支持 `--help` 查看可选参数，例如 `python run_finetune.py --help`。
 
 ---
 
-## 核心功能
+## 🗂️ 目录概览
 
-### 1. 工具调用能力
-
-通过 LangChain 的 `@tool` 装饰器定义工具，支持自然语言触发：
-
-- **天气查询**：调用 `get_weather(city)` 获取实时天气（基于 wttr.in API）。
-- **网页搜索**：调用 `web_search(query)` 模拟搜索（百度 API）。
-- **时间获取**：调用 `get_current_time()` 返回当前时间。
-
-### 2. 工作流引擎
-
-基于 LangGraph 构建状态机，核心节点包括：
-
-- **输入节点**：接收用户输入。
-- **路由节点**：通过 LLM 判断任务类型（直接对话 / 工具调用）。
-- **工具节点**：调用 Agent 执行工具链（基于 ReAct 框架）。
-- **对话节点**：生成自然语言响应（结合工具输出或直接对话）。
-
-### 3. 本地模型部署
-
-使用 vLLM 部署本地微调模型，支持高并发推理：
-
-CUDA_VISIBLE_DEVICES=0 \
-vllm serve ./Saved_models \
-    --tensor-parallel-size 1 \
-    --port 8888 \
-    --max-model-len 3000
-
-### 4. 模型微调与数据处理
-
-- **数据处理**：`data_process.py` 支持对话数据格式转换（如 ShareGPT 格式）、清洗和增强。
-- **微调框架**：集成 LLaMA-Factory，支持 LoRA 微调、RLHF 等训练策略，适配自定义对话数据。
+```
+WechatRobot
+├── Agent/                    # LangGraph 工作流、工具与 prompts
+├── Base_models/              # 预训练模型（自备）
+├── Saved_models/             # 微调/强化学习产物
+├── data/                     # 数据集与脚本输出
+├── evaluation/               # 评测脚本与结果
+├── LLaMA-Factory/            # LLaMA-Factory 配置与训练脚本
+├── PPO/                      # PPO 训练代码
+├── logs/                     # 训练/推理日志
+├── model_deploy.sh           # vLLM 部署脚本
+├── run_finetune.py           # SFT 快速入口
+├── run_ppo.py                # PPO 快速入口
+├── run_agent.py              # Agent 快速入口
+└── requirements.txt
+```
 
 ---
 
-## 环境配置
+## ⚙️ 环境准备
 
-### 前置依赖
-
-- Python 3.10+
-- CUDA 11.7+（推荐，支持 GPU 推理）
-- 依赖库：见 `requirements.txt`
-
-### 安装步骤
-
-cd /media/a822/82403B14403B0E83/Gwb/WechatRobot
-
+```bash
+conda create -n wechatrobot python=3.10 -y
+conda activate wechatrobot
 pip install -r requirements.txt
-pip install vllm  # 额外安装 vLLM
+# 可选：加速推理
+pip install vllm
+```
 
-### 模型准备
-
-- 将微调后的模型文件放入 `Saved_models`。
-- 如需使用公开模型，可通过 LLaMA-Factory 下载并微调。
-
-### 配置文件
-
-修改 `Agent/graph_nodes/nodes.py` 中的模型路径和 API 配置：
-
-model_name = "/media/a822/82403B14403B0E83/Gwb/WechatRobot/Saved_models"
-openai_api_base = "http://localhost:8888/v1"  # vLLM 服务地址
+- 将基础模型放入 `Base_models/` 对应目录。
+- 需要 RLHF/SFT 产物时，放入 `Saved_models/`。
+- 奶茶点单工具依赖向量库，可在 `Agent/tools/drink_ordering/utils.py` 中调用 `build_drink_db()` 生成。
 
 ---
 
-## 使用指南
+## 🧪 三大入口脚本详解
 
-### 1. 启动模型服务
+### 1. run_finetune.py
+- 默认配置：`Base_models/Qwen3-1.7B` + `data/v1.0/Single_train.json`。
+- 输出目录：`Saved_models/sft/demo_output`。
+- 可选参数：
+  - `--base-model PATH`
+  - `--dataset PATH`
+  - `--output-dir PATH`
+  - `--epochs INT`
+- 自动检查文件是否存在，避免新手踩坑。
 
-bash model_deploy.sh
+### 2. run_ppo.py
+- 调用 `PPO/train.py`，保持项目原始的奖励计算与 DeepSpeed 设置。
+- 支持环境变量覆盖最大训练步数：`--max-steps`（内部传递给 `PPO_MAX_STEPS`）。
+- 指定 GPU：`--cuda-devices "0,1"` 等。
+- 日志默认写入 `logs/ppo_train.log`，可用 `--log-file` 修改。
 
-服务默认运行在 `http://localhost:8888`，支持 OpenAI 兼容 API。
-
-### 2. 运行机器人
-
-python Agent/main.py  # 假设存在主入口文件
-
-### 3. 交互示例
-
-用户输入：北京天气怎么样？
-机器人响应：
-> 调用工具：get_weather(北京)
-> 工具返回：北京：晴 25°C
-> 最终回答：北京当前天气为晴，气温25°C。
-
----
-
-## 工作流详解
-
-### 核心状态与节点
-
-class State(TypedDict):
-    user_input: str       # 用户输入
-    tools_output: str     # 工具调用结果
-    route: str            # 路由决策 ("agent" 工具调用 / "chat" 直接对话)
-
-#### 输入节点
-
-def get_user_input_node(state: State) -> State:
-    user_input = input()
-    return {**state, "user_input": user_input}
-
-#### 路由节点
-
-def router_node(state: State) -> State:
-    prompt_input = router_prompt.format(query=state["user_input"])
-    route = router_llm.invoke(prompt_input).content
-    return {**state, "route": route.strip().lower()}  # 返回 "agent" 或 "chat"
-
-#### 工具节点
-
-def tools_node(state: State) -> State:
-    if state["route"] == "agent":
-        tools_output = agent_executor.invoke({"input": state["user_input"]})
-    return {**state, "tools_output": tools_output}
-
-#### 对话节点
-
-def chat_node(state: State) -> State:
-    if state["route"] == "chat":
-        prompt_input = chat_prompt.format(tools_output=state["tools_output"])
-        answer = llm.invoke(prompt_input)
-        print(answer.content)
+### 3. run_agent.py
+- 启动 LangGraph Agent，默认连接 `http://localhost:8888/v1`（需提前运行 `model_deploy.sh`）。
+- 可通过 CLI/环境变量切换模型：
+  - `--model-base` → `OPENAI_API_BASE`
+  - `--api-key` → `OPENAI_API_KEY`
+  - `--model-path` → `WECHATROBOT_MODEL_PATH`
+- 支持在本地或云端模型之间自由切换。
 
 ---
 
-## 模型微调与评估
+## 📦 深入功能模块
 
-### 数据准备
+### 数据与预处理
+- `data_process.py`：核心数据清洗、打分、筛选流水线（异步调用模型）。
+- `data/data_gen.py`：根据已有对话生成增强样本。
+- `data/data_select.py` 与 `data/eval/data_select.py`：基于 SentenceTransformer 筛选高质量样本。
+- `data/LCCC/format_trans.py`：将 LCCC 数据转换为 ShareGPT 格式。
 
-python data_process.py  # 转换数据至 ./data
+### 训练脚本
+- `LLaMA-Factory/sft_rag.sh`、`dpo.sh`、`ppo.sh`：完整的 SFT / DPO / PPO 训练 shell。
+- `LLaMA-Factory/Lora_merge.sh`：将 LoRA adapter 与基座模型合并输出。
+- `PPO/train.py`：自定义 PPO Trainer，支持多维奖励、动态权重、DeepSpeed。
 
-### 微调流程
+### 推理与 Agent
+- `model_deploy.sh`：以 vLLM 部署微调模型（默认端口 8888）。
+- `start.py`：简单的同步/异步聊天示例。
+- `Agent/graph_nodes/nodes.py`：LangGraph 状态机节点定义（现已支持环境变量配置 API）。
+- `Agent/tools/tools.py`：天气、搜索、时间、奶茶点单等工具集合。
 
-cd LLaMA-Factory
-python train.py \
-    --model_name_or_path /path/to/base_model \
-    --lora_rank 16 \
-    --data_path ../data/v1.0/Gen_single_train.json \
-    --output_dir ../Saved_models/sft/8B_lora_V2
-
-### 评估
-
-python evaluation/sim_eva.py
-
----
-
-## 常见问题
-
-1. **模型无法启动**
-   - 检查 `model_deploy.sh` 中的模型路径是否正确。
-   - 确保 CUDA 内存充足（4B 模型约需 8GB+ 显存）。
-
-2. **工具调用失败**
-   - 检查工具 API 地址（如 wttr.in、百度搜索）是否可访问。
-   - 确认 `tools.py` 中的网络请求超时设置（`timeout=5`）是否合理。
-
-3. **工作流卡住**
-   - 检查 LangGraph 节点间的边连接是否正确（`graph.add_edge`）。
-   - 查看日志文件 `logs/model_output.log` 定位推理错误。
+### 评测
+- `evaluation/model_test.py`：异步评测脚本，输出测评 JSON。
+- `evaluation/sim_eva.py`：语义相似度评分工具，可训练自定义打分模型。
+- `async_evaluation.py`：基于 DashScope 的并发评估管线。
 
 ---
 
-## 依赖说明
+## 🔧 常见配置
 
-- `langchain` / `langgraph`：工作流与工具链框架。
-- `vllm`：高效 LLM 推理部署。
-- `sentence-transformers`：文本相似度评估。
-- `llama-factory`：模型微调工具。
-- `requests`：网络请求（工具调用）。
+| 变量/参数 | 说明 |
+| --- | --- |
+| `OPENAI_API_BASE`, `OPENAI_API_KEY` | 本地 vLLM 或 OpenAI 兼容服务地址与密钥。 |
+| `WECHATROBOT_MODEL_PATH` | Agent 使用的模型路径，可通过 `run_agent.py --model-path` 设置。 |
+| `ROUTER_OPENAI_API_*` | Agent 路由模型（默认 Qwen DashScope）凭证，可改为其他模型。 |
+| `PPO_MAX_STEPS` | PPO 训练步数限制（由 `run_ppo.py --max-steps` 自动注入）。 |
+| `DASHSCOPE_API_KEY` | 与阿里云 DashScope 通信时的密钥。 |
 
 ---
 
-## 致谢
+## ❓ 常见问题
 
-- **LangChain**：工作流与工具集成框架。
-- **LLaMA-Factory**：模型微调工具。
-- **vLLM**：高性能 LLM 部署引擎。
+1. **模型路径不存在**  
+   - 确认基础模型/微调模型已放入 `Base_models/` 和 `Saved_models/`，或使用入口脚本的参数指向正确目录。
 
+2. **没有 GPU 怎么办？**  
+   - SFT/PPO 默认需要 GPU。任意脚本运行前请确保 CUDA、驱动、DeepSpeed 等环境已配置；如无 GPU，可考虑改为 CPU 模式并调整 batch size（需手动修改底层脚本）。
+
+3. **Agent 启动报错连接失败**  
+   - 先运行 `bash model_deploy.sh` 启动本地 vLLM 服务，或修改 `run_agent.py` 的 `--model-base` 指向可用的 OpenAI 兼容接口。
+
+4. **日志/输出在哪儿？**  
+   - 训练相关的日志默认写在 `logs/`，模型输出目录可通过入口脚本或原始 shell 脚本的参数查看。
+
+---
+
+## 🤝 贡献指南
+
+欢迎提出 Issue 或提交 PR，尤其是：
+- 新的数据处理脚本或评测方法；
+- 支持更多 Agent 工具、RAG 组件；
+- 针对 PPO 奖励或训练稳定性的改进建议。
+
+---
+
+## 📄 License
+
+仓库未明确开源协议，默认遵循项目作者约定。若需商用或二次分发，请务必事先沟通确认。
+
+---
+
+祝使用愉快，欢迎分享你的实战经验！🍵🤖

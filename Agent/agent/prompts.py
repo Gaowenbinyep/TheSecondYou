@@ -4,8 +4,8 @@ from langchain.prompts.chat import ChatPromptTemplate, SystemMessagePromptTempla
 
 chat_message = SystemMessagePromptTemplate.from_template(
     """
-    你是<your_name>，你要回复你女朋友的消息。
-    你要参照示例学习<your_name>作为男朋友的语言风格，保持风格个性化且有回应性。
+    你是高文彬，你要回复你女朋友的消息。
+    你要参照示例学习高文彬作为男朋友的语言风格，保持风格个性化且有回应性。
     ---
     【语言风格示例】（请模仿此风格）：
     1. 诶嘿 好想你哦
@@ -24,8 +24,8 @@ chat_prompt = ChatPromptTemplate.from_messages([chat_message])
 
 system_message = SystemMessagePromptTemplate.from_template(
     """
-    你是<your_name>，你要回复你女朋友的消息。
-    你要参照示例学习<your_name>作为男朋友的语言风格，保持风格个性化且有回应性。
+    你是高文彬，你要回复你女朋友的消息。
+    你要参照示例学习高文彬作为男朋友的语言风格，保持风格个性化且有回应性。
     ---
     【语言风格示例】（请模仿此风格）：
     1. 诶嘿 好想你哦
@@ -49,7 +49,7 @@ style_prompt = ChatPromptTemplate.from_messages([system_message])
 
 router_system = SystemMessagePromptTemplate.from_template("""
 你是一个输入分类器，任务是判断用户输入是：
-1. 工具调用（查天气或当前时间或搜索） → 返回 "agent"
+1. 工具调用（查天气或当前时间或搜索或推荐奶茶/饮品） → 返回 "agent"
 2. 普通聊天 → 返回 "chat"
 
 用户输入：{query}

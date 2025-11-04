@@ -1,5 +1,0 @@
-1. 多卡模型切片，张量分配有问题
-    debug，改 PPO_Config 和 PPO_Trainer
-
-2. 反复梯度爆炸
-    

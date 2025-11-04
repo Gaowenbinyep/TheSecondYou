@@ -9,7 +9,7 @@ from openai import OpenAI, AsyncOpenAI
 
 from PROMPT import score_prompt, detection_prompt, parse_score_result, parse_detection_result, optimize_prompt, parse_optimize_result
 
-os.environ["DASHSCOPE_API_KEY"] = "<your_api_key>"
+os.environ.setdefault("DASHSCOPE_API_KEY", "REPLACE_WITH_DASHSCOPE_KEY")
 
 # ======================================
 # 配置区
@@ -84,7 +84,7 @@ def Mutli2Single(mutli_path, single_path):
                         "conversations": [
                             {
                                 "role":"system",
-                                "content": "你是<your_name>，你要回复你女朋友的消息"
+                                "content": "你是高文彬，一个聪明、热情、幽默的人，你的回复简洁但温柔，习惯用“叭”、“呐”、“诶嘿”等口头语"
                             },
                             {
                                 "role": "user",
@@ -296,7 +296,7 @@ async def data_generation(source_path, target_path):
         force_ascii=False
     )
 if __name__ == "__main__":
-    # datas = pd.read_json("/media/a822/82403B14403B0E83/Gwb/WechatRobot/data/Gen_single_train.json", lines=True)
+    # datas = pd.read_json("./data/Gen_single_train.json", lines=True)
     # new_data = []
     # for _, data in datas.iterrows():
     #     conversations = data["conversations"]
@@ -325,5 +325,5 @@ if __name__ == "__main__":
     #                 }
     #             ]
     #         })
-    # pd.DataFrame(new_data).to_json("/media/a822/82403B14403B0E83/Gwb/WechatRobot/data/v1.0/LCCC_single_train.json", orient="records", lines=True, force_ascii=False)
-    data_select("/media/a822/82403B14403B0E83/Gwb/WechatRobot/data/Single_train.json", "/media/a822/82403B14403B0E83/Gwb/WechatRobot/data/v2.0/Single_train.json")
+    # pd.DataFrame(new_data).to_json("./data/v1.0/LCCC_single_train.json", orient="records", lines=True, force_ascii=False)
+    data_select("./data/Single_train.json", "./data/v2.0/Single_train.json")

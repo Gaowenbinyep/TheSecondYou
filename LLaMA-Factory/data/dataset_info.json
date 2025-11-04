@@ -716,7 +716,7 @@
     "folder": "python"
   },
   "wechat_robot_sft_V0": {
-    "file_name": "/media/a822/82403B14403B0E83/Gwb/WechatRobot/data/final_train.json",
+    "file_name": "../data/final_train.json",
     "formatting": "sharegpt",
     "columns": {
       "messages": "conversations"
@@ -730,7 +730,7 @@
     }
   },
   "wechat_robot_sft_V1": {
-    "file_name": "/media/a822/82403B14403B0E83/Gwb/WechatRobot/data/v1.0/Single_train.json",
+    "file_name": "../data/v1.0/Single_train.json",
     "formatting": "sharegpt",
     "columns": {
       "messages": "conversations"
@@ -744,7 +744,7 @@
     }
   },
   "wechat_robot_sft_LCCC": {
-    "file_name": "/media/a822/82403B14403B0E83/Gwb/WechatRobot/data/v1.0/LCCC_single_train.json",
+    "file_name": "../data/v1.0/LCCC_single_train.json",
     "formatting": "sharegpt",
     "columns": {
       "messages": "conversations"
@@ -758,7 +758,7 @@
     }
   },
   "wechat_robot_sft_Multi": {
-    "file_name": "/media/a822/82403B14403B0E83/Gwb/WechatRobot/data/v0.0/final_train.json",
+    "file_name": "../data/v0.0/final_train.json",
     "formatting": "sharegpt",
     "columns": {
       "messages": "conversations"
@@ -772,7 +772,7 @@
     }
   },  
   "wechat_robot_rm": {
-    "file_name": "/media/a822/82403B14403B0E83/Gwb/WechatRobot/data/ppo_rm_train.json",
+    "file_name": "../data/ppo_rm_train.json",
     "ranking": true,
     "formatting": "sharegpt",
     "columns": {
@@ -790,10 +790,10 @@
     }
   },
   "wechat_robot_ppo": {
-    "file_name": "/media/a822/82403B14403B0E83/Gwb/WechatRobot/data/ppo_train.json"
+    "file_name": "../data/ppo_train.json"
   },
   "RAG_sft_v1": {
-    "file_name": "/media/a822/82403B14403B0E83/Gwb/RAG/Train/llm_train_data.jsonl",
+    "file_name": "../RAG/Train/llm_train_data.jsonl",
     "formatting": "sharegpt",
     "columns": {
       "messages": "conversations"

@@ -1,9 +1,14 @@
 #!/bin/bash
 
+set -euo pipefail
+
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+
 # 选择物理 GPU
 export CUDA_VISIBLE_DEVICES=0,1
 export GLOO_SOCKET_IFNAME=lo
 export NCCL_SOCKET_IFNAME=lo
+
 # 启动分布式训练
 nohup torchrun --nproc_per_node=2 src/train.py \
     --stage ppo \
@@ -15,7 +20,7 @@ nohup torchrun --nproc_per_node=2 src/train.py \
     --reward_model_type lora \
     --dataset wechat_robot_ppo \
     --template qwen3 \
-    --deepspeed /media/a822/82403B14403B0E83/Gwb/WechatRobot/LLaMA-Factory/deepspeed/ds_z2_config.json \
+    --deepspeed "${SCRIPT_DIR}/deepspeed/ds_z2_config.json" \
     --gradient_checkpointing \
     --per_device_train_batch_size 1 \
     --gradient_accumulation_steps 1 \
@@ -38,4 +43,4 @@ nohup torchrun --nproc_per_node=2 src/train.py \
     --freeze_multi_modal_projector \
     --ddp_timeout 180000000 \
     --report_to tensorboard \
-    > ../logs/model_train.log 2>&1
+    > ../logs/model_train.log 2>&1 &

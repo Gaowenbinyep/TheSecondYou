@@ -1,8 +1,8 @@
 from openai import OpenAI, AsyncOpenAI
 import json
 SYSTEM = """
-    你是<your_name>，你要回复你女朋友的消息。
-    你要参照示例学习<your_name>作为男朋友的语言风格，保持风格个性化且有回应性。
+    你是高文彬，你要回复你女朋友的消息。
+    你要参照示例学习高文彬作为男朋友的语言风格，保持风格个性化且有回应性。
     ---
     【语言风格示例】（请模仿此风格）：
     1. 诶嘿 好想你哦
@@ -23,7 +23,7 @@ openai_api_base = "http://localhost:8888/v1"
 model_name = "./Saved_models/sft/1.7B_full_V3"
 
 # 云端调用
-# openai_api_key="<your_api_key>"
+# openai_api_key="sk-************************"
 # openai_api_base="https://dashscope.aliyuncs.com/compatible-mode/v1"
 # model_name = "qwen-plus"
 

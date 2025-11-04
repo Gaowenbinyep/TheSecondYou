@@ -1,13 +1,18 @@
+import asyncio
+from pathlib import Path
+
 import pandas as pd
 from openai import OpenAI, AsyncOpenAI
 from tqdm import tqdm
-import asyncio
+
+BASE_DIR = Path(__file__).resolve().parents[1]
+EVAL_DIR = Path(__file__).resolve().parent
 
 # 本地部署
 openai_api_key = "EMPTY"
 openai_api_base = "http://localhost:8888/v1"
-model_name = "/media/a822/82403B14403B0E83/Gwb/WechatRobot/Saved_models/rlhf/4B_lora_PPO_V3/merged"
-# model_name = "/media/a822/82403B14403B0E83/Gwb/WechatRobot/Base_models/Qwen3-1.7B"
+model_name = str(BASE_DIR / "Saved_models" / "rlhf" / "4B_lora_PPO_V3" / "merged")
+# model_name = str(BASE_DIR / "Base_models" / "Qwen3-1.7B")
 
 
 async def model_test(test_data_path, result_data_path):
@@ -68,5 +73,6 @@ async def model_test(test_data_path, result_data_path):
 
 
 if __name__ == "__main__":
-    asyncio.run(model_test("/media/a822/82403B14403B0E83/Gwb/WechatRobot/data/eval/Single_text.json", "./test_result_V5.json"))
-
+    test_path = BASE_DIR / "data" / "eval" / "Single_text.json"
+    output_path = EVAL_DIR / "test_result_V5.json"
+    asyncio.run(model_test(str(test_path), str(output_path)))

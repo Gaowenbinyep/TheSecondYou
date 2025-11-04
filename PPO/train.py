@@ -1,48 +1,40 @@
 
-import os
 import json
+import logging
+import os
 import random
 import re
-import logging
 from dataclasses import dataclass
+from pathlib import Path
 from typing import List
+
 import numpy as np
 import torch
-from torch.utils.data import Dataset
-from transformers import (
-    AutoTokenizer,
-    AutoModelForCausalLM,
-    BitsAndBytesConfig,
-)
 from accelerate import DeepSpeedPlugin
-from peft import (
-    LoraConfig,
-    PeftModel,
-    get_peft_model,
-)
-from trl import (
-    PPOTrainer,
-    PPOConfig,
-    AutoModelForCausalLMWithValueHead,
-)
 from openai import OpenAI
-os.environ["DASHSCOPE_API_KEY"] = "<your_api_key>"
+from peft import LoraConfig, PeftModel, get_peft_model
+from torch.utils.data import Dataset
+from transformers import AutoModelForCausalLM, AutoTokenizer, BitsAndBytesConfig
+from trl import PPOConfig, PPOTrainer, AutoModelForCausalLMWithValueHead
+
+os.environ.setdefault("DASHSCOPE_API_KEY", "REPLACE_WITH_DASHSCOPE_KEY")
 
 local_rank = int(os.environ.get("LOCAL_RANK", "0"))
 current_device = torch.device(f"cuda:{local_rank}")
 if torch.cuda.is_available():
     torch.cuda.set_device(local_rank)
 
+BASE_DIR = Path(__file__).resolve().parents[1]
 
 
 
 @dataclass
 class RunCfg:
-    policy_base: str = "/media/a822/82403B14403B0E83/Gwb/WechatRobot/Base_models/Qwen3-4B"
-    lora_adapter_path: str = "/media/a822/82403B14403B0E83/Gwb/WechatRobot/Saved_models/sft/4B_lora_V2"
-    output_dir: str = "/media/a822/82403B14403B0E83/Gwb/WechatRobot/Saved_models/rlhf/4B_lora_PPO_V3"
-    system_prompt: str = """你是<your_name>，你要回复你女朋友的消息。
-        你要参照示例学习<your_name>作为男朋友的语言风格，保持风格个性化且有回应性。
+    policy_base: str = str(BASE_DIR / "Base_models" / "Qwen3-4B")
+    lora_adapter_path: str = str(BASE_DIR / "Saved_models" / "sft" / "4B_lora_V2")
+    output_dir: str = str(BASE_DIR / "Saved_models" / "rlhf" / "4B_lora_PPO_V4")
+    system_prompt: str = """你是高文彬，你要回复你女朋友的消息。
+        你要参照示例学习高文彬作为男朋友的语言风格，保持风格个性化且有回应性。
         ---
         【语言风格示例】（请模仿此风格）：
         1. 诶嘿 好想你哦
@@ -95,6 +87,14 @@ class RunCfg:
 
 
 cfg = RunCfg()
+max_steps_override = os.getenv("PPO_MAX_STEPS")
+if max_steps_override:
+    try:
+        cfg.max_training_steps = int(max_steps_override)
+    except ValueError as exc:
+        raise ValueError("PPO_MAX_STEPS must be an integer") from exc
+os.makedirs(cfg.output_dir, exist_ok=True)
+
 logging.basicConfig(
     level=logging.WARNING,
     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
@@ -104,8 +104,6 @@ logging.basicConfig(
     ]
 )
 logger = logging.getLogger(__name__)
-
-os.makedirs(cfg.output_dir, exist_ok=True)
 
 dtype = torch.bfloat16 if cfg.bf16 else torch.float16
 random.seed(cfg.seed)
@@ -306,7 +304,7 @@ class JsonConversationDataset(Dataset):
         return {"query": query, "response": response}
 
 train_ds = JsonConversationDataset(
-    path="/media/a822/82403B14403B0E83/Gwb/WechatRobot/data/PPO/Single_train.json",
+    path=str(BASE_DIR / "data" / "PPO" / "Single_train.json"),
     tokenizer=tokenizer,
     max_length=128
 )

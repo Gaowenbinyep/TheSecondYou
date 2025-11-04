@@ -6,7 +6,7 @@ from openai import AsyncOpenAI
 import re
 from evaluation.llm_eva import evaluation_prompt
 
-os.environ["DASHSCOPE_API_KEY"] = "<your_api_key>"
+os.environ.setdefault("DASHSCOPE_API_KEY", "REPLACE_WITH_DASHSCOPE_KEY")
 
 # ======================================
 # 配置区
