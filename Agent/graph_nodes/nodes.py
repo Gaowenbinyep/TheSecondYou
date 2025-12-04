@@ -17,7 +17,7 @@ openai_api_key = os.getenv("OPENAI_API_KEY", "EMPTY")
 openai_api_base = os.getenv("OPENAI_API_BASE", "http://localhost:8888/v1")
 model_name = os.getenv(
     "WECHATROBOT_MODEL_PATH",
-    str(BASE_DIR / "Saved_models" / "rlhf" / "4B_lora_PPO_V3" / "merged"),
+    str(BASE_DIR / "Saved_models" / "rlhf" / "your_model_name_V3" / "merged"),
 )
 
 router_openai_api_key = os.getenv(

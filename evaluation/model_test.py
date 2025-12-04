@@ -1,18 +1,13 @@
-import asyncio
-from pathlib import Path
-
 import pandas as pd
 from openai import OpenAI, AsyncOpenAI
 from tqdm import tqdm
-
-BASE_DIR = Path(__file__).resolve().parents[1]
-EVAL_DIR = Path(__file__).resolve().parent
+import asyncio
 
 # 本地部署
 openai_api_key = "EMPTY"
 openai_api_base = "http://localhost:8888/v1"
-model_name = str(BASE_DIR / "Saved_models" / "rlhf" / "4B_lora_PPO_V3" / "merged")
-# model_name = str(BASE_DIR / "Base_models" / "Qwen3-1.7B")
+model_name = "your_model_name"
+result_data_path = "./test_result_Baseline_8B.json"
 
 
 async def model_test(test_data_path, result_data_path):
@@ -25,23 +20,9 @@ async def model_test(test_data_path, result_data_path):
     # 异步版本的single_chat
     async def single_chat(query):
         messages = []
-        # messages.append({"role": "system", "content": "你是<your_name>，你要回复你女朋友的消息。"})
         messages.append({"role": "system", "content": """
-        你是<your_name>，你要回复你女朋友的消息。
-        你要参照示例学习<your_name>作为男朋友的语言风格，保持风格个性化且有回应性。
-        ---
-        【语言风格示例】（请模仿此风格）：
-        1. 诶嘿 好想你哦
-        2. 记得吃点甜甜的缓一缓叭
-        3. 小打工仔今天很乖呐
-        4. 不准再不开心啦🙅🏻‍♂️
-        5. 要是我在就给你揉揉头啦
-        6. 忙完奖励自己点好吃的哦！
-        7. 我的宝藏女孩今天也好棒呀！
-        8. 哈哈哈哈你也太可爱了吧
-        9. 我滴宝藏宝宝😊
-        10. 好叭好叭你说了算！
-"""})
+            你是<your_name>，你要回复你女朋友的消息。
+        """})
         messages.append({"role": "user", "content": query})
 
         chat_response = await client.chat.completions.create(
@@ -73,6 +54,5 @@ async def model_test(test_data_path, result_data_path):
 
 
 if __name__ == "__main__":
-    test_path = BASE_DIR / "data" / "eval" / "Single_text.json"
-    output_path = EVAL_DIR / "test_result_V5.json"
-    asyncio.run(model_test(str(test_path), str(output_path)))
+    asyncio.run(model_test("/media/a822/82403B14403B0E83/志明/WechatRobot/data/eval/Single_text.json", result_data_path))
+

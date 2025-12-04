@@ -20,7 +20,7 @@ nohup torchrun --nproc_per_node=2 src/train.py \
     --lr_scheduler_type cosine \
     --warmup_ratio 0.1 \
     --cutoff_len 2048 \
-    --output_dir ../Saved_models/rlhf/4B_lora_ppo/rm \
+    --output_dir ../Saved_models/rlhf/your_model_name/rm \
     --save_safetensors False \
     --deepspeed deepspeed/ds_z3_config.json \
     --bf16 True \

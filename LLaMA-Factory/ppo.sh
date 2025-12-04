@@ -15,8 +15,8 @@ nohup torchrun --nproc_per_node=2 src/train.py \
     --finetuning_type lora \
     --do_train \
     --model_name_or_path ../Saved_models/sft/4B_lora \
-    --adapter_name_or_path ../Saved_models/rlhf/4B_lora_ppo/checkpoint-2000 \
-    --reward_model ../Saved_models/rlhf/4B_lora_ppo/rm/adapter \
+    --adapter_name_or_path ../Saved_models/rlhf/your_model_name/checkpoint-2000 \
+    --reward_model ../Saved_models/rlhf/your_model_name/rm/adapter \
     --reward_model_type lora \
     --dataset wechat_robot_ppo \
     --template qwen3 \
@@ -30,7 +30,7 @@ nohup torchrun --nproc_per_node=2 src/train.py \
     --lr_scheduler_type cosine \
     --warmup_ratio 0.1 \
     --cutoff_len 512 \
-    --output_dir ../Saved_models/rlhf/4B_lora_ppo \
+    --output_dir ../Saved_models/rlhf/your_model_name \
     --bf16 True \
     --logging_steps 10 \
     --save_steps 2000 \

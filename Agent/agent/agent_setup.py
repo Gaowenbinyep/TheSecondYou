@@ -11,7 +11,7 @@ BASE_DIR = Path(__file__).resolve().parents[2]
 # 本地部署
 openai_api_key = "EMPTY"
 openai_api_base = "http://localhost:8888/v1"
-model_name = str(BASE_DIR / "Saved_models" / "rlhf" / "4B_lora_PPO_V3" / "merged")
+model_name = str(BASE_DIR / "Saved_models" / "rlhf" / "your_model_name_V3" / "merged")
 
 llm = ChatOpenAI(
     api_key = openai_api_key,

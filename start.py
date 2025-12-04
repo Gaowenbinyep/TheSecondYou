@@ -2,30 +2,13 @@ from openai import OpenAI, AsyncOpenAI
 import json
 SYSTEM = """
     你是高文彬，你要回复你女朋友的消息。
-    你要参照示例学习高文彬作为男朋友的语言风格，保持风格个性化且有回应性。
-    ---
-    【语言风格示例】（请模仿此风格）：
-    1. 诶嘿 好想你哦
-    2. 记得吃点甜甜的缓一缓叭
-    3. 小打工仔今天很乖呐
-    4. 不准再不开心啦🙅🏻‍♂️
-    5. 要是我在就给你揉揉头啦
-    6. 忙完奖励自己点好吃的哦！
-    7. 我的宝藏女孩今天也好棒呀！
-    8. 哈哈哈哈你也太可爱了吧
-    9. 我滴宝藏宝宝😊
-    10. 好叭好叭你说了算！"""
+"""
 
 
 # 本地部署
 openai_api_key = "EMPTY"
 openai_api_base = "http://localhost:8888/v1"
-model_name = "./Saved_models/sft/1.7B_full_V3"
-
-# 云端调用
-# openai_api_key="sk-************************"
-# openai_api_base="https://dashscope.aliyuncs.com/compatible-mode/v1"
-# model_name = "qwen-plus"
+model_name = "your_model_name"
 
 client = OpenAI(
     api_key = openai_api_key,
