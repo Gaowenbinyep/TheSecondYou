@@ -1,6 +1,7 @@
-# WechatRobot 🤖
+# The second you 🤖
 
-面向微信陪伴聊天场景的中文对话与强化学习训练流水线。项目包含数据示例、SFT 微调、PPO 强化训练、Agent 工具链、vLLM 本地推理部署，接口遵循 OpenAI API 格式，可零改动接入各类前端或 Bot 框架。
+面向微信陪伴聊天场景风格化对齐的中文对话与强化学习训练流水线，让模型成为第二个你。
+项目包含数据示例、SFT 微调、PPO 强化训练、Agent 工具链、vLLM 本地推理部署，接口遵循 OpenAI API 格式，可零改动接入各类前端或 Bot 框架。
 
 ## 🚀 Features
 
