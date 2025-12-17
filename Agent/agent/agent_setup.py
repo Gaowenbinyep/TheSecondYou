@@ -1,17 +1,14 @@
-from pathlib import Path
-
-from langchain.agents import AgentType, initialize_agent
+from langchain.agents import initialize_agent
+from langchain.agents import AgentType
 from langchain_openai import ChatOpenAI
-
+import os
 from agent.prompts import style_prompt, router_prompt
 from tools import get_weather
 
-BASE_DIR = Path(__file__).resolve().parents[2]
-
 # 本地部署
-openai_api_key = "EMPTY"
-openai_api_base = "http://localhost:8888/v1"
-model_name = str(BASE_DIR / "Saved_models" / "rlhf" / "your_model_name_V3" / "merged")
+openai_api_key = os.environ.get("OPENAI_API_KEY", "EMPTY")
+openai_api_base = os.environ.get("OPENAI_API_BASE", "http://localhost:8888/v1")
+model_name = os.environ.get("WECHATROBOT_MODEL_PATH", "Models/Saved_models/rl/4B_lora_PPO_V3/merged")
 
 llm = ChatOpenAI(
     api_key = openai_api_key,

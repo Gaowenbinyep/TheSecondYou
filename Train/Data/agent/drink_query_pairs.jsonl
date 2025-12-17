@@ -1,0 +1,315 @@
+{"query": "想要一杯正常甜的大杯珍珠奶茶，加满冰的那种", "attributes": {"drink_name": "经典珍珠奶茶", "options": {"size": ["中杯", "大杯"], "sugar": ["无糖", "少甜", "半糖", "正常甜", "多甜"], "ice": ["去冰", "少冰", "正常冰", "多冰"], "topping": ["珍珠"]}}}
+{"query": "推荐一款经典的奶茶，要中杯、半糖、少冰，加珍珠的", "attributes": {"drink_name": "经典珍珠奶茶", "options": {"size": ["中杯", "大杯"], "sugar": ["无糖", "少甜", "半糖", "正常甜", "多甜"], "ice": ["去冰", "少冰", "正常冰", "多冰"], "topping": ["珍珠"]}}}
+{"query": "想要一杯清新的茉香绿茶奶盖，少糖少冰就好", "attributes": {"drink_name": "茉香绿茶奶盖", "options": {"size": ["中杯", "大杯"], "sugar": ["无糖", "少糖", "正常甜"], "ice": ["去冰", "少冰", "正常冰", "多冰"]}}}
+{"query": "推荐一个带茶香的奶盖奶茶，中杯正常甜去冰", "attributes": {"drink_name": "茉香绿茶奶盖", "options": {"size": ["中杯", "大杯"], "sugar": ["无糖", "少糖", "正常甜"], "ice": ["去冰", "少冰", "正常冰", "多冰"]}}}
+{"query": "我喜欢茉莉香味的奶茶，加奶盖，大杯少冰无糖", "attributes": {"drink_name": "茉香绿茶奶盖", "options": {"size": ["中杯", "大杯"], "sugar": ["无糖", "少糖", "正常甜"], "ice": ["去冰", "少冰", "正常冰", "多冰"]}}}
+{"query": "来一杯口感清爽", "attributes": {"drink_name": "茉香绿茶奶盖", "options": {"size": ["中杯", "大杯"], "sugar": ["无糖", "少糖", "正常甜"], "ice": ["去冰", "少冰", "正常冰", "多冰"]}}}
+{"query": "想要一杯温热的芋圆鲜奶，少甜就好，适合冬天喝的那种", "attributes": {"drink_name": "芋圆鲜奶", "options": {"size": ["常规"], "sugar": ["少甜", "正常甜", "多甜"], "ice": ["常温", "温热"], "topping": ["芋圆"]}}}
+{"query": "来杯有芋圆的鲜奶茶，正常甜度，不要太冰", "attributes": {"drink_name": "芋圆鲜奶", "options": {"size": ["常规"], "sugar": ["少甜", "正常甜", "多甜"], "ice": ["常温", "温热"], "topping": ["芋圆"]}}}
+{"query": "我喜欢喝料多的奶茶，给我推荐个有芋圆的，常温的就行", "attributes": {"drink_name": "芋圆鲜奶", "options": {"size": ["常规"], "sugar": ["少甜", "正常甜", "多甜"], "ice": ["常温", "温热"], "topping": ["芋圆"]}}}
+{"query": "想要一杯带红豆的抹茶奶茶，少糖少冰最好", "attributes": {"drink_name": "抹茶红豆奶茶", "options": {"size": ["中杯", "大杯"], "sugar": ["少糖", "半糖", "正常甜"], "ice": ["少冰", "正常冰", "常温"], "topping": ["红豆"]}}}
+{"query": "想要一杯带椰果的奶茶，喜欢椰香味浓一点的", "attributes": {"drink_name": "椰香鲜奶茶", "options": {"size": ["中杯", "大杯"], "sugar": ["无糖", "少糖", "正常甜", "多甜"], "ice": ["去冰", "少冰", "正常冰", "常温"], "topping": ["椰果"]}}}
+{"query": "推荐一款可以选少糖少冰的鲜奶茶，不要加珍珠但要有椰果", "attributes": {"drink_name": "椰香鲜奶茶", "options": {"size": ["中杯", "大杯"], "sugar": ["无糖", "少糖", "正常甜", "多甜"], "ice": ["去冰", "少冰", "正常冰", "常温"], "topping": ["椰果"]}}}
+{"query": "有没有中杯大杯都行的椰香奶茶？想喝正常的甜度和冰块", "attributes": {"drink_name": "椰香鲜奶茶", "options": {"size": ["中杯", "大杯"], "sugar": ["无糖", "少糖", "正常甜", "多甜"], "ice": ["去冰", "少冰", "正常冰", "常温"], "topping": ["椰果"]}}}
+{"query": "想要一杯有布丁的奶茶，焦糖味的，中杯少甜少冰", "attributes": {"drink_name": "焦糖布丁奶茶", "options": {"size": ["中杯", "大杯"], "sugar": ["少甜", "半糖", "正常甜"], "ice": ["少冰", "正常冰", "常温"], "topping": ["布丁"]}}}
+{"query": "想要一杯不甜的乌龙拿铁，少冰就好", "attributes": {"drink_name": "乌龙拿铁", "options": {"size": ["常规"], "sugar": ["无糖", "少糖", "正常甜"], "ice": ["去冰", "少冰", "正常冰", "常温"]}}}
+{"query": "想喝一杯香味浓郁的黑芝麻奶茶，少糖少冰就好", "attributes": {"drink_name": "黑芝麻奶茶", "options": {"size": ["中杯", "大杯"], "sugar": ["少糖", "正常甜"], "ice": ["少冰", "正常冰", "温热"]}}}
+{"query": "想要一杯少糖的水果四季春茶，带点冰但不要太多", "attributes": {"drink_name": "水果四季春茶", "options": {"size": ["大杯"], "sugar": ["少糖", "半糖", "正常甜"], "ice": ["去冰", "少冰", "正常冰", "多冰"]}}}
+{"query": "大杯水果四季春茶，半糖少冰，喝起来不要太甜腻", "attributes": {"drink_name": "水果四季春茶", "options": {"size": ["大杯"], "sugar": ["少糖", "半糖", "正常甜"], "ice": ["去冰", "少冰", "正常冰", "多冰"]}}}
+{"query": "来一杯正常甜的水果四季春茶，加多冰，夏天就爱这种清爽口感", "attributes": {"drink_name": "水果四季春茶", "options": {"size": ["大杯"], "sugar": ["少糖", "半糖", "正常甜"], "ice": ["去冰", "少冰", "正常冰", "多冰"]}}}
+{"query": "想要一杯有爆爆珠的百香果味奶茶，少糖少冰喝起来更清爽", "attributes": {"drink_name": "百香双响炮", "options": {"size": ["中杯", "大杯"], "sugar": ["少糖", "正常甜"], "ice": ["少冰", "正常冰", "多冰"], "topping": ["爆爆珠"]}}}
+{"query": "推荐一款加了爆爆珠的果茶奶茶，大杯正常甜的就行，要多冰的", "attributes": {"drink_name": "百香双响炮", "options": {"size": ["中杯", "大杯"], "sugar": ["少糖", "正常甜"], "ice": ["少冰", "正常冰", "多冰"], "topping": ["爆爆珠"]}}}
+{"query": "我喜欢口感丰富的奶茶，百香双响炮怎么样", "attributes": {"drink_name": "百香双响炮", "options": {"size": ["中杯", "大杯"], "sugar": ["少糖", "正常甜"], "ice": ["少冰", "正常冰", "多冰"], "topping": ["爆爆珠"]}}}
+{"query": "想要一杯少糖少冰的桂花乌龙奶茶，口感清爽一点的", "attributes": {"drink_name": "桂花乌龙奶茶", "options": {"size": ["常规"], "sugar": ["少糖", "正常甜", "多甜"], "ice": ["少冰", "正常冰", "常温"]}}}
+{"query": "推荐一款带花香的奶茶，不要太甜，常温的就行", "attributes": {"drink_name": "桂花乌龙奶茶", "options": {"size": ["常规"], "sugar": ["少糖", "正常甜", "多甜"], "ice": ["少冰", "正常冰", "常温"]}}}
+{"query": "有没有桂花味的奶茶？想喝正常的甜度和冰量", "attributes": {"drink_name": "桂花乌龙奶茶", "options": {"size": ["常规"], "sugar": ["少糖", "正常甜", "多甜"], "ice": ["少冰", "正常冰", "常温"]}}}
+{"query": "喜欢乌龙茶底加奶", "attributes": {"drink_name": "桂花乌龙奶茶", "options": {"size": ["常规"], "sugar": ["少糖", "正常甜", "多甜"], "ice": ["少冰", "正常冰", "常温"]}}}
+{"query": "想要一杯少甜的草莓奶昔，中杯正常冰就好", "attributes": {"drink_name": "草莓鲜奶昔", "options": {"size": ["中杯"], "sugar": ["少甜", "正常甜"], "ice": ["正常冰"]}}}
+{"query": "想要一杯酸甜口的果茶，不要太甜，加芝士奶盖的那种", "attributes": {"drink_name": "芝士莓果茶", "options": {"size": ["大杯"], "sugar": ["无糖", "少糖", "半糖"], "ice": ["去冰", "正常冰", "多冰"]}}}
+{"query": "想要一杯少糖的鲜橙绿茶，不要太甜，带点果香", "attributes": {"drink_name": "鲜橙绿茶", "options": {"size": ["中杯", "大杯"], "sugar": ["少糖", "正常甜"], "ice": ["去冰", "少冰", "正常冰", "多冰"]}}}
+{"query": "夏天喝的，来杯大杯鲜橙绿茶，正常冰少糖，清爽一点", "attributes": {"drink_name": "鲜橙绿茶", "options": {"size": ["中杯", "大杯"], "sugar": ["少糖", "正常甜"], "ice": ["去冰", "少冰", "正常冰", "多冰"]}}}
+{"query": "有没有加了真实橙子的绿茶？最好可以选少冰和少糖", "attributes": {"drink_name": "鲜橙绿茶", "options": {"size": ["中杯", "大杯"], "sugar": ["少糖", "正常甜"], "ice": ["去冰", "少冰", "正常冰", "多冰"]}}}
+{"query": "想要一杯酸酸甜甜的奶茶，蓝莓味的最好，少糖少冰", "attributes": {"drink_name": "蓝莓酸奶奶茶", "options": {"size": ["中杯"], "sugar": ["少糖", "正常甜"], "ice": ["少冰", "正常冰"]}}}
+{"query": "推荐一款清爽不腻的果味奶茶，我喜欢正常甜度和正常冰", "attributes": {"drink_name": "蓝莓酸奶奶茶", "options": {"size": ["中杯"], "sugar": ["少糖", "正常甜"], "ice": ["少冰", "正常冰"]}}}
+{"query": "有没有中杯的果茶加酸奶的？最好是蓝莓口味，少冰少糖", "attributes": {"drink_name": "蓝莓酸奶奶茶", "options": {"size": ["中杯"], "sugar": ["少糖", "正常甜"], "ice": ["少冰", "正常冰"]}}}
+{"query": "想要一杯黑糖珍珠的鲜奶茶，少甜少冰的版本", "attributes": {"drink_name": "黑糖珍珠鲜奶", "options": {"size": ["常规"], "sugar": ["少甜", "正常甜", "多甜"], "ice": ["少冰", "正常冰", "温热"], "topping": ["珍珠"]}}}
+{"query": "想要一杯酸酸甜甜的柠檬茶，少糖少冰最好", "attributes": {"drink_name": "柠檬红茶", "options": {"size": ["中杯", "大杯"], "sugar": ["无糖", "少糖", "半糖", "正常甜"], "ice": ["去冰", "少冰", "正常冰", "多冰"]}}}
+{"query": "想要一杯少甜的蜂蜜绿茶，冰块不要太多多，少冰就好", "attributes": {"drink_name": "蜂蜜绿茶", "options": {"size": ["常规"], "sugar": ["少甜", "正常甜"], "ice": ["去冰", "少冰", "正常冰"]}}}
+{"query": "想要一杯有椰果的奶茶，不要太甜，冰块少一点", "attributes": {"drink_name": "椰子冻奶茶", "options": {"size": ["中杯", "大杯"], "sugar": ["少糖", "正常甜"], "ice": ["少冰", "正常冰"], "topping": ["椰子冻"]}}}
+{"query": "推荐一款加了椰子冻的奶茶，中杯少糖少冰的", "attributes": {"drink_name": "椰子冻奶茶", "options": {"size": ["中杯", "大杯"], "sugar": ["少糖", "正常甜"], "ice": ["少冰", "正常冰"], "topping": ["椰子冻"]}}}
+{"query": "我喜欢喝口感Q弹的奶茶，糖度低一些，带椰香的", "attributes": {"drink_name": "椰子冻奶茶", "options": {"size": ["中杯", "大杯"], "sugar": ["少糖", "正常甜"], "ice": ["少冰", "正常冰"], "topping": ["椰子冻"]}}}
+{"query": "来杯大", "attributes": {"drink_name": "椰子冻奶茶", "options": {"size": ["中杯", "大杯"], "sugar": ["少糖", "正常甜"], "ice": ["少冰", "正常冰"], "topping": ["椰子冻"]}}}
+{"query": "想要一杯抹茶味的奶茶，不要太甜，半糖就好，加点冰更清爽", "attributes": {"drink_name": "芝士抹茶", "options": {"size": ["中杯", "大杯"], "sugar": ["少糖", "半糖", "正常甜"], "ice": ["少冰", "正常冰", "常温"]}}}
+{"query": "推荐个中杯的芝士抹茶，少冰少糖，喝起来别太腻", "attributes": {"drink_name": "芝士抹茶", "options": {"size": ["中杯", "大杯"], "sugar": ["少糖", "半糖", "正常甜"], "ice": ["少冰", "正常冰", "常温"]}}}
+{"query": "我喜欢喝微甜带点茶香的奶盖茶，正常冰", "attributes": {"drink_name": "芝士抹茶", "options": {"size": ["中杯", "大杯"], "sugar": ["少糖", "半糖", "正常甜"], "ice": ["少冰", "正常冰", "常温"]}}}
+{"query": "想要一杯果香浓郁的蜜桃乌龙茶，少糖少冰最清爽", "attributes": {"drink_name": "蜜桃乌龙茶", "options": {"size": ["中杯", "大杯"], "sugar": ["少糖", "半糖", "正常甜"], "ice": ["去冰", "少冰", "正常冰", "多冰"]}}}
+{"query": "想要一杯少糖的葡萄柚绿茶，冰块正常就好，不要太甜腻", "attributes": {"drink_name": "葡萄柚绿茶", "options": {"size": ["大杯"], "sugar": ["少糖", "正常甜"], "ice": ["去冰", "正常冰", "多冰"]}}}
+{"query": "推荐一款清爽的果茶，大杯的，葡萄柚味道的，少糖去冰", "attributes": {"drink_name": "葡萄柚绿茶", "options": {"size": ["大杯"], "sugar": ["少糖", "正常甜"], "ice": ["去冰", "正常冰", "多冰"]}}}
+{"query": "我喜欢喝带点酸味的茶，不要太甜，加多冰，葡萄柚", "attributes": {"drink_name": "葡萄柚绿茶", "options": {"size": ["大杯"], "sugar": ["少糖", "正常甜"], "ice": ["去冰", "正常冰", "多冰"]}}}
+{"query": "想要一杯清爽的西瓜味冰茶，少糖多冰最爽口", "attributes": {"drink_name": "西瓜冰茶", "options": {"size": ["中杯", "大杯"], "sugar": ["少糖", "正常甜"], "ice": ["多冰", "正常冰"]}}}
+{"query": "想要一杯有红豆的抹茶冰沙，不要太甜", "attributes": {"drink_name": "抹茶红豆冰沙", "options": {"size": ["中杯", "大杯"], "sugar": ["少糖", "正常甜"], "ice": ["多冰", "正常冰"], "topping": ["红豆"]}}}
+{"query": "推荐一款抹茶味的冰沙，加红豆，少糖比较好", "attributes": {"drink_name": "抹茶红豆冰沙", "options": {"size": ["中杯", "大杯"], "sugar": ["少糖", "正常甜"], "ice": ["多冰", "正常冰"], "topping": ["红豆"]}}}
+{"query": "我喜欢喝中杯的抹茶红豆饮品，多冰少糖", "attributes": {"drink_name": "抹茶红豆冰沙", "options": {"size": ["中杯", "大杯"], "sugar": ["少糖", "正常甜"], "ice": ["多冰", "正常冰"], "topping": ["红豆"]}}}
+{"query": "有没有抹茶底的冰沙？要大杯", "attributes": {"drink_name": "抹茶红豆冰沙", "options": {"size": ["中杯", "大杯"], "sugar": ["少糖", "正常甜"], "ice": ["多冰", "正常冰"], "topping": ["红豆"]}}}
+{"query": "想要一杯带点焦糖香的咖啡奶茶，少糖少冰更健康", "attributes": {"drink_name": "焦糖奶油咖啡", "options": {"size": ["中杯", "大杯"], "sugar": ["少糖", "正常甜"], "ice": ["少冰", "正常冰"]}}}
+{"query": "推荐一个有奶油和焦糖风味的咖啡奶茶，正常甜大杯的", "attributes": {"drink_name": "焦糖奶油咖啡", "options": {"size": ["中杯", "大杯"], "sugar": ["少糖", "正常甜"], "ice": ["少冰", "正常冰"]}}}
+{"query": "我喜欢喝口感丰富的奶茶，有没有焦糖和奶油结合的咖啡口味？中杯少冰的", "attributes": {"drink_name": "焦糖奶油咖啡", "options": {"size": ["中杯", "大杯"], "sugar": ["少糖", "正常甜"], "ice": ["少冰", "正常冰"]}}}
+{"query": "想要一杯甜甜的蜜桃味冰沙，少糖就好，夏天喝超爽", "attributes": {"drink_name": "蜜桃绿茶冰沙", "options": {"size": ["中杯", "大杯"], "sugar": ["少糖", "正常甜"], "ice": ["多冰", "正常冰"]}}}
+{"query": "有没有清新的果茶推荐？最好是大杯多冰的蜜桃绿茶", "attributes": {"drink_name": "蜜桃绿茶冰沙", "options": {"size": ["中杯", "大杯"], "sugar": ["少糖", "正常甜"], "ice": ["多冰", "正常冰"]}}}
+{"query": "我喜欢喝少糖多冰的果茶，有什么清爽不腻的选择吗", "attributes": {"drink_name": "蜜桃绿茶冰沙", "options": {"size": ["中杯", "大杯"], "sugar": ["少糖", "正常甜"], "ice": ["多冰", "正常冰"]}}}
+{"query": "想要一杯酸酸甜甜的蓝莓味奶盖，加蓝莓果肉，少糖少冰", "attributes": {"drink_name": "蓝莓芝士奶盖", "options": {"size": ["中杯", "大杯"], "sugar": ["无糖", "少糖", "正常甜"], "ice": ["少冰", "正常冰"], "topping": ["蓝莓"]}}}
+{"query": "想要一杯带冰淇淋的奶茶，草莓味的，冰多一点，不要太甜", "attributes": {"drink_name": "草莓冰淇淋奶茶", "options": {"size": ["中杯", "大杯"], "sugar": ["少糖", "正常甜"], "ice": ["多冰", "正常冰"], "topping": ["草莓冰淇淋"]}}}
+{"query": "有没有草莓冰淇淋口味的奶茶？要大杯的，正常冰少糖", "attributes": {"drink_name": "草莓冰淇淋奶茶", "options": {"size": ["中杯", "大杯"], "sugar": ["少糖", "正常甜"], "ice": ["多冰", "正常冰"], "topping": ["草莓冰淇淋"]}}}
+{"query": "最近好想吃草莓冰淇淋，有没有和奶茶结合的？中杯就行，正常甜度", "attributes": {"drink_name": "草莓冰淇淋奶茶", "options": {"size": ["中杯", "大杯"], "sugar": ["少糖", "正常甜"], "ice": ["多冰", "正常冰"], "topping": ["草莓冰淇淋"]}}}
+{"query": "想要一杯清新的柠檬味绿茶，少糖少冰更健康", "attributes": {"drink_name": "柠檬蜂蜜绿茶", "options": {"size": ["中杯", "大杯"], "sugar": ["少糖", "正常甜"], "ice": ["少冰", "正常冰"]}}}
+{"query": "推荐一款带柠檬的茶饮，不要太甜，加点冰就好", "attributes": {"drink_name": "柠檬蜂蜜绿茶", "options": {"size": ["中杯", "大杯"], "sugar": ["少糖", "正常甜"], "ice": ["少冰", "正常冰"]}}}
+{"query": "有没有酸酸甜甜的果味绿茶？正常甜正常冰就行", "attributes": {"drink_name": "柠檬蜂蜜绿茶", "options": {"size": ["中杯", "大杯"], "sugar": ["少糖", "正常甜"], "ice": ["少冰", "正常冰"]}}}
+{"query": "想喝点开胃的果茶，", "attributes": {"drink_name": "柠檬蜂蜜绿茶", "options": {"size": ["中杯", "大杯"], "sugar": ["少糖", "正常甜"], "ice": ["少冰", "正常冰"]}}}
+{"query": "想要一杯少糖的芒果椰奶冰沙，加多冰，大杯的", "attributes": {"drink_name": "芒果椰奶冰沙", "options": {"size": ["大杯"], "sugar": ["少糖", "正常甜"], "ice": ["多冰"]}}}
+{"query": "想要一杯带红豆的抹茶奶茶，少糖少冰更健康", "attributes": {"drink_name": "红豆抹茶拿铁", "options": {"size": ["中杯", "大杯"], "sugar": ["少糖", "正常甜"], "ice": ["少冰", "正常冰"], "topping": ["红豆"]}}}
+{"query": "推荐一款清新的抹茶拿铁加红豆，中杯正常甜就行", "attributes": {"drink_name": "红豆抹茶拿铁", "options": {"size": ["中杯", "大杯"], "sugar": ["少糖", "正常甜"], "ice": ["少冰", "正常冰"], "topping": ["红豆"]}}}
+{"query": "我喜欢喝不太甜的抹茶味奶茶，加红豆，冰块少一点", "attributes": {"drink_name": "红豆抹茶拿铁", "options": {"size": ["中杯", "大杯"], "sugar": ["少糖", "正常甜"], "ice": ["少冰", "正常冰"], "topping": ["红豆"]}}}
+{"query": "来杯大杯", "attributes": {"drink_name": "红豆抹茶拿铁", "options": {"size": ["中杯", "大杯"], "sugar": ["少糖", "正常甜"], "ice": ["少冰", "正常冰"], "topping": ["红豆"]}}}
+{"query": "想要一杯巧克力味的奶昔，不要太甜，少糖就好，正常冰就行", "attributes": {"drink_name": "巧克力奶昔", "options": {"size": ["中杯", "大杯"], "sugar": ["少糖", "正常甜"], "ice": ["正常冰"]}}}
+{"query": "想要一杯少糖多冰的果茶，口感清爽一点的", "attributes": {"drink_name": "葡萄柚冰茶", "options": {"size": ["中杯", "大杯"], "sugar": ["少糖", "正常甜"], "ice": ["多冰", "正常冰"]}}}
+{"query": "有没有带点果味的冰茶？我喜欢正常甜和正常冰", "attributes": {"drink_name": "葡萄柚冰茶", "options": {"size": ["中杯", "大杯"], "sugar": ["少糖", "正常甜"], "ice": ["多冰", "正常冰"]}}}
+{"query": "推荐一款适合夏天喝的中杯果味茶饮，不要太甜", "attributes": {"drink_name": "葡萄柚冰茶", "options": {"size": ["中杯", "大杯"], "sugar": ["少糖", "正常甜"], "ice": ["多冰", "正常冰"]}}}
+{"query": "想喝葡萄柚味道的冰茶", "attributes": {"drink_name": "葡萄柚冰茶", "options": {"size": ["中杯", "大杯"], "sugar": ["少糖", "正常甜"], "ice": ["多冰", "正常冰"]}}}
+{"query": "想要一杯带Q弹白玉的抹茶奶茶，少糖少冰更健康", "attributes": {"drink_name": "抹茶白玉奶茶", "options": {"size": ["中杯", "大杯"], "sugar": ["少糖", "正常甜"], "ice": ["少冰", "正常冰"], "topping": ["白玉"]}}}
+{"query": "想要一杯有芋泥和布丁的奶茶，中杯少糖少冰", "attributes": {"drink_name": "芋泥布丁奶茶", "options": {"size": ["中杯", "大杯"], "sugar": ["少糖", "正常甜"], "ice": ["少冰", "正常冰"], "topping": ["芋泥", "布丁"]}}}
+{"query": "我喜欢浓郁口感的奶茶，加芋泥和布丁，大杯正常甜正常冰", "attributes": {"drink_name": "芋泥布丁奶茶", "options": {"size": ["中杯", "大杯"], "sugar": ["少糖", "正常甜"], "ice": ["少冰", "正常冰"], "topping": ["芋泥", "布丁"]}}}
+{"query": "给我来杯有料的奶茶，芋泥多一点，布丁也要，不要太甜", "attributes": {"drink_name": "芋泥布丁奶茶", "options": {"size": ["中杯", "大杯"], "sugar": ["少糖", "正常甜"], "ice": ["少冰", "正常冰"], "topping": ["芋泥", "布丁"]}}}
+{"query": "想要一杯带香蕉的巧克力奶茶，不要太甜，正常冰就好", "attributes": {"drink_name": "巧克力香蕉奶茶", "options": {"size": ["中杯", "大杯"], "sugar": ["少糖", "正常甜"], "ice": ["正常冰"], "topping": ["香蕉"]}}}
+{"query": "有什么加了香蕉又像巧克力口味的奶茶推荐吗？要少糖选项的", "attributes": {"drink_name": "巧克力香蕉奶茶", "options": {"size": ["中杯", "大杯"], "sugar": ["少糖", "正常甜"], "ice": ["正常冰"], "topping": ["香蕉"]}}}
+{"query": "我喜欢喝浓郁一点的奶茶，喜欢加料是香蕉的，巧克力味的大杯来一杯少糖的", "attributes": {"drink_name": "巧克力香蕉奶茶", "options": {"size": ["中杯", "大杯"], "sugar": ["少糖", "正常甜"], "ice": ["正常冰"], "topping": ["香蕉"]}}}
+{"query": "想要一杯清新的果茶，草莓味的，带点薄荷感，不要太甜", "attributes": {"drink_name": "草莓薄荷茶", "options": {"size": ["中杯", "大杯"], "sugar": ["少糖", "正常甜"], "ice": ["少冰", "正常冰"]}}}
+{"query": "想要一杯酸酸甜甜的果味冰沙，不要太甜，加多冰", "attributes": {"drink_name": "蓝莓酸奶冰沙", "options": {"size": ["中杯", "大杯"], "sugar": ["少糖", "正常甜"], "ice": ["多冰"]}}}
+{"query": "想要一杯清爽的茶饮，少糖多冰的柠檬薄荷冰茶", "attributes": {"drink_name": "柠檬薄荷冰茶", "options": {"size": ["中杯", "大杯"], "sugar": ["少糖", "正常甜"], "ice": ["多冰", "正常冰"]}}}
+{"query": "推荐一款适合夏天的冰茶，不要太甜，加很多冰", "attributes": {"drink_name": "柠檬薄荷冰茶", "options": {"size": ["中杯", "大杯"], "sugar": ["少糖", "正常甜"], "ice": ["多冰", "正常冰"]}}}
+{"query": "有没有清新的柠檬味茶饮？想要正常甜和正常冰的", "attributes": {"drink_name": "柠檬薄荷冰茶", "options": {"size": ["中杯", "大杯"], "sugar": ["少糖", "正常甜"], "ice": ["多冰", "正常冰"]}}}
+{"query": "想要一杯有红豆和奶油的冰沙，不要太甜，最好是大杯的", "attributes": {"drink_name": "红豆奶油冰沙", "options": {"size": ["中杯", "大杯"], "sugar": ["少糖", "正常甜"], "ice": ["多冰"], "topping": ["红豆", "奶油"]}}}
+{"query": "我喜欢喝多冰的甜品感奶茶，少糖，加红豆和奶油，有什么推荐吗？", "attributes": {"drink_name": "红豆奶油冰沙", "options": {"size": ["中杯", "大杯"], "sugar": ["少糖", "正常甜"], "ice": ["多冰"], "topping": ["红豆", "奶油"]}}}
+{"query": "有没有那种口感丰富、带点嚼劲的冰沙奶茶？", "attributes": {"drink_name": "红豆奶油冰沙", "options": {"size": ["中杯", "大杯"], "sugar": ["少糖", "正常甜"], "ice": ["多冰"], "topping": ["红豆", "奶油"]}}}
+{"query": "想要一杯清新的果茶，不要太甜，带点冰的", "attributes": {"drink_name": "蜜桃柠檬茶", "options": {"size": ["中杯", "大杯"], "sugar": ["少糖", "正常甜"], "ice": ["正常冰", "多冰"]}}}
+{"query": "有没有蜜桃味的茶推荐？最好少糖多冰", "attributes": {"drink_name": "蜜桃柠檬茶", "options": {"size": ["中杯", "大杯"], "sugar": ["少糖", "正常甜"], "ice": ["正常冰", "多冰"]}}}
+{"query": "天气好热，想喝杯大杯的蜜桃柠檬茶，正常甜加多冰", "attributes": {"drink_name": "蜜桃柠檬茶", "options": {"size": ["中杯", "大杯"], "sugar": ["少糖", "正常甜"], "ice": ["正常冰", "多冰"]}}}
+{"query": "我喜欢清爽酸甜的", "attributes": {"drink_name": "蜜桃柠檬茶", "options": {"size": ["中杯", "大杯"], "sugar": ["少糖", "正常甜"], "ice": ["正常冰", "多冰"]}}}
+{"query": "想要一杯有布丁的奶茶，芒果味的，不要太甜", "attributes": {"drink_name": "芒果布丁奶茶", "options": {"size": ["中杯", "大杯"], "sugar": ["少糖", "正常甜"], "ice": ["少冰", "正常冰"], "topping": ["布丁"]}}}
+{"query": "推荐一款加了布丁的果味奶茶，可以少冰的", "attributes": {"drink_name": "芒果布丁奶茶", "options": {"size": ["中杯", "大杯"], "sugar": ["少糖", "正常甜"], "ice": ["少冰", "正常冰"], "topping": ["布丁"]}}}
+{"query": "有没有大杯的芒果味奶茶加布丁，正常甜就好", "attributes": {"drink_name": "芒果布丁奶茶", "options": {"size": ["中杯", "大杯"], "sugar": ["少糖", "正常甜"], "ice": ["少冰", "正常冰"], "topping": ["布丁"]}}}
+{"query": "我喜欢喝中杯少糖少冰的", "attributes": {"drink_name": "芒果布丁奶茶", "options": {"size": ["中杯", "大杯"], "sugar": ["少糖", "正常甜"], "ice": ["少冰", "正常冰"], "topping": ["布丁"]}}}
+{"query": "想要一杯有红豆的抹茶奶盖，少糖少冰更健康", "attributes": {"drink_name": "抹茶红豆奶盖", "options": {"size": ["中杯", "大杯"], "sugar": ["少糖", "正常甜"], "ice": ["少冰", "正常冰"], "topping": ["红豆"]}}}
+{"query": "推荐一款微甜的抹茶奶茶，加红豆，喜欢冰一点的口感", "attributes": {"drink_name": "抹茶红豆奶盖", "options": {"size": ["中杯", "大杯"], "sugar": ["少糖", "正常甜"], "ice": ["少冰", "正常冰"], "topping": ["红豆"]}}}
+{"query": "有没有抹茶味的奶盖茶？要大杯的，加红豆，不要太甜", "attributes": {"drink_name": "抹茶红豆奶盖", "options": {"size": ["中杯", "大杯"], "sugar": ["少糖", "正常甜"], "ice": ["少冰", "正常冰"], "topping": ["红豆"]}}}
+{"query": "想要一杯带果肉的冰沙，少糖多冰，草莓味的最好", "attributes": {"drink_name": "草莓椰奶冰沙", "options": {"size": ["大杯"], "sugar": ["少糖", "正常甜"], "ice": ["多冰"], "topping": ["草莓"]}}}
+{"query": "有什么推荐的水果冰沙吗？喜欢椰奶口感，加草莓配料的", "attributes": {"drink_name": "草莓椰奶冰沙", "options": {"size": ["大杯"], "sugar": ["少糖", "正常甜"], "ice": ["多冰"], "topping": ["草莓"]}}}
+{"query": "给我来杯大杯的草莓味冰沙，不要太甜，多冰，加草莓果", "attributes": {"drink_name": "草莓椰奶冰沙", "options": {"size": ["大杯"], "sugar": ["少糖", "正常甜"], "ice": ["多冰"], "topping": ["草莓"]}}}
+{"query": "想要一杯酸酸甜甜的奶茶，不要太甜，加点冰更清爽", "attributes": {"drink_name": "蜂蜜柠檬奶茶", "options": {"size": ["中杯", "大杯"], "sugar": ["少糖", "正常甜"], "ice": ["少冰", "正常冰"]}}}
+{"query": "推荐一款用蜂蜜调味的柠檬奶茶，少糖少冰的喝起来更健康", "attributes": {"drink_name": "蜂蜜柠檬奶茶", "options": {"size": ["中杯", "大杯"], "sugar": ["少糖", "正常甜"], "ice": ["少冰", "正常冰"]}}}
+{"query": "有没有口感清新、带果香的奶茶？我想喝中杯少冰正常甜的", "attributes": {"drink_name": "蜂蜜柠檬奶茶", "options": {"size": ["中杯", "大杯"], "sugar": ["少糖", "正常甜"], "ice": ["少冰", "正常冰"]}}}
+{"query": "想要一杯少糖的蓝莓气泡茶，加多冰，喝起来清爽一点", "attributes": {"drink_name": "蓝莓气泡茶", "options": {"size": ["大杯"], "sugar": ["少糖", "正常甜"], "ice": ["多冰"]}}}
+{"query": "有没有大杯的果味气泡茶推荐？最好是蓝莓味的，不要太甜", "attributes": {"drink_name": "蓝莓气泡茶", "options": {"size": ["大杯"], "sugar": ["少糖", "正常甜"], "ice": ["多冰"]}}}
+{"query": "天气好热，想喝点带果香的饮料，少糖多冰", "attributes": {"drink_name": "蓝莓气泡茶", "options": {"size": ["大杯"], "sugar": ["少糖", "正常甜"], "ice": ["多冰"]}}}
+{"query": "想要一杯少糖的芒果冰沙，加奶油，喝起来清爽一点", "attributes": {"drink_name": "芒果奶油冰沙", "options": {"size": ["大杯"], "sugar": ["少糖", "正常甜"], "ice": ["多冰"], "topping": ["奶油"]}}}
+{"query": "来杯大杯芒果奶油冰沙，正常甜多冰，夏天喝好满足", "attributes": {"drink_name": "芒果奶油冰沙", "options": {"size": ["大杯"], "sugar": ["少糖", "正常甜"], "ice": ["多冰"], "topping": ["奶油"]}}}
+{"query": "有没有芒果味的冰沙推荐？要带奶油的，冰多一点更过瘾", "attributes": {"drink_name": "芒果奶油冰沙", "options": {"size": ["大杯"], "sugar": ["少糖", "正常甜"], "ice": ["多冰"], "topping": ["奶油"]}}}
+{"query": "想要一杯带点茶香的奶茶，抹茶味的，喝起来顺滑一点", "attributes": {"drink_name": "抹茶椰奶奶茶", "options": {"size": ["中杯", "大杯"], "sugar": ["少糖", "正常甜"], "ice": ["少冰", "正常冰"]}}}
+{"query": "推荐一款少糖少冰的健康奶茶，最好是抹茶和椰奶搭配的", "attributes": {"drink_name": "抹茶椰奶奶茶", "options": {"size": ["中杯", "大杯"], "sugar": ["少糖", "正常甜"], "ice": ["少冰", "正常冰"]}}}
+{"query": "我喜欢喝口感浓郁但不甜腻的奶茶，有没有抹茶加椰奶的", "attributes": {"drink_name": "抹茶椰奶奶茶", "options": {"size": ["中杯", "大杯"], "sugar": ["少糖", "正常甜"], "ice": ["少冰", "正常冰"]}}}
+{"query": "想要一杯暖暖的奶茶，红枣和桂圆味道浓一点，少糖少冰", "attributes": {"drink_name": "红枣桂圆奶茶", "options": {"size": ["中杯", "大杯"], "sugar": ["少糖", "正常甜"], "ice": ["少冰", "正常冰"]}}}
+{"query": "推荐一款养生一点的奶茶，不要太甜，大杯正常冰的", "attributes": {"drink_name": "红枣桂圆奶茶", "options": {"size": ["中杯", "大杯"], "sugar": ["少糖", "正常甜"], "ice": ["少冰", "正常冰"]}}}
+{"query": "有没有适合冬天喝的奶茶？喜欢红枣桂圆香的，中杯少糖就好", "attributes": {"drink_name": "红枣桂圆奶茶", "options": {"size": ["中杯", "大杯"], "sugar": ["少糖", "正常甜"], "ice": ["少冰", "正常冰"]}}}
+{"query": "想要一杯清爽不腻的茶饮，带点果味和植物清香，少糖少冰最理想", "attributes": {"drink_name": "柠檬芦荟茶", "options": {"size": ["中杯", "大杯"], "sugar": ["少糖", "正常甜"], "ice": ["去冰", "少冰", "正常冰"]}}}
+{"query": "想要一杯酸酸甜甜的果味奶茶，少糖少冰更健康", "attributes": {"drink_name": "芒果乳酸菌", "options": {"size": ["中杯", "大杯"], "sugar": ["少糖", "正常甜"], "ice": ["少冰", "正常冰"]}}}
+{"query": "想要一杯少糖的巧克力冰沙，加奶油，冰多一点", "attributes": {"drink_name": "巧克力奶油冰沙", "options": {"size": ["大杯"], "sugar": ["少糖", "正常甜"], "ice": ["多冰"], "topping": ["奶油"]}}}
+{"query": "大杯巧克力奶油冰沙，正常甜多冰的那种", "attributes": {"drink_name": "巧克力奶油冰沙", "options": {"size": ["大杯"], "sugar": ["少糖", "正常甜"], "ice": ["多冰"], "topping": ["奶油"]}}}
+{"query": "有没有那种口感绵密、不太甜的巧克力冰沙推荐？最好加了奶油的", "attributes": {"drink_name": "巧克力奶油冰沙", "options": {"size": ["大杯"], "sugar": ["少糖", "正常甜"], "ice": ["多冰"], "topping": ["奶油"]}}}
+{"query": "来杯冰一点的巧克力", "attributes": {"drink_name": "巧克力奶油冰沙", "options": {"size": ["大杯"], "sugar": ["少糖", "正常甜"], "ice": ["多冰"], "topping": ["奶油"]}}}
+{"query": "想要一杯有布丁的奶茶，不要太甜，加点冰", "attributes": {"drink_name": "草莓布丁奶茶", "options": {"size": ["中杯", "大杯"], "sugar": ["少糖", "正常甜"], "ice": ["少冰", "正常冰"], "topping": ["布丁"]}}}
+{"query": "有没有草莓味的奶茶推荐？最好里面带布丁，中杯少糖少冰", "attributes": {"drink_name": "草莓布丁奶茶", "options": {"size": ["中杯", "大杯"], "sugar": ["少糖", "正常甜"], "ice": ["少冰", "正常冰"], "topping": ["布丁"]}}}
+{"query": "喜欢果香和奶味混合的口感，加布丁的奶茶来一杯，正常甜大杯", "attributes": {"drink_name": "草莓布丁奶茶", "options": {"size": ["中杯", "大杯"], "sugar": ["少糖", "正常甜"], "ice": ["少冰", "正常冰"], "topping": ["布丁"]}}}
+{"query": "想要一杯带果香的奶茶，蓝莓味的，加椰奶那种，不要太甜", "attributes": {"drink_name": "蓝莓椰奶奶茶", "options": {"size": ["中杯", "大杯"], "sugar": ["少糖", "正常甜"], "ice": ["少冰", "正常冰"]}}}
+{"query": "推荐一款用椰奶做的果味奶茶，我喜欢少糖少冰的", "attributes": {"drink_name": "蓝莓椰奶奶茶", "options": {"size": ["中杯", "大杯"], "sugar": ["少糖", "正常甜"], "ice": ["少冰", "正常冰"]}}}
+{"query": "有没有蓝莓和椰奶搭配的奶茶？我想试试中杯正常冰的", "attributes": {"drink_name": "蓝莓椰奶奶茶", "options": {"size": ["中杯", "大杯"], "sugar": ["少糖", "正常甜"], "ice": ["少冰", "正常冰"]}}}
+{"query": "想要一杯清新的果茶，少糖多冰的柠檬西柚茶", "attributes": {"drink_name": "柠檬西柚茶", "options": {"size": ["中杯", "大杯"], "sugar": ["少糖", "正常甜"], "ice": ["正常冰", "多冰"]}}}
+{"query": "想要一杯带燕麦的抹茶奶茶，少糖少冰更健康一点", "attributes": {"drink_name": "抹茶燕麦奶茶", "options": {"size": ["中杯", "大杯"], "sugar": ["少糖", "正常甜"], "ice": ["少冰", "正常冰"], "topping": ["燕麦"]}}}
+{"query": "想要一杯少糖的火龙果冰沙，大杯多冰，夏天喝特别爽口", "attributes": {"drink_name": "火龙果冰沙", "options": {"size": ["大杯"], "sugar": ["少糖", "正常甜"], "ice": ["多冰"]}}}
+{"query": "有没有颜色好看又不会太甜的冰沙？想试试大杯多冰的版本", "attributes": {"drink_name": "火龙果冰沙", "options": {"size": ["大杯"], "sugar": ["少糖", "正常甜"], "ice": ["多冰"]}}}
+{"query": "最近喜欢喝果味冰沙，少糖或正常甜的大杯", "attributes": {"drink_name": "火龙果冰沙", "options": {"size": ["大杯"], "sugar": ["少糖", "正常甜"], "ice": ["多冰"]}}}
+{"query": "想要一杯少糖的蜂蜜柠檬气泡水，加多冰，喝起来清爽一点", "attributes": {"drink_name": "蜂蜜柠檬气泡水", "options": {"size": ["中杯", "大杯"], "sugar": ["少糖", "正常甜"], "ice": ["多冰"]}}}
+{"query": "有没有大杯的气泡水推荐？最好是柠檬味的，少糖多冰", "attributes": {"drink_name": "蜂蜜柠檬气泡水", "options": {"size": ["中杯", "大杯"], "sugar": ["少糖", "正常甜"], "ice": ["多冰"]}}}
+{"query": "今天好热，想喝蜂蜜柠檬气泡水，正常甜多冰，中", "attributes": {"drink_name": "蜂蜜柠檬气泡水", "options": {"size": ["中杯", "大杯"], "sugar": ["少糖", "正常甜"], "ice": ["多冰"]}}}
+{"query": "想要一杯少糖的水果冰沙，草莓和西瓜味的，喝起来要够冰才爽", "attributes": {"drink_name": "草莓西瓜冰沙", "options": {"size": ["大杯"], "sugar": ["少糖", "正常甜"], "ice": ["多冰"]}}}
+{"query": "想要一杯有椰果的芒果奶茶，少糖少冰更健康", "attributes": {"drink_name": "芒果椰果奶茶", "options": {"size": ["中杯", "大杯"], "sugar": ["少糖", "正常甜"], "ice": ["少冰", "正常冰"], "topping": ["椰果"]}}}
+{"query": "想要一杯无糖的草本茶，带点柠檬味，不要太凉，温一点就好", "attributes": {"drink_name": "柠檬草本茶", "options": {"size": ["常规"], "sugar": ["无糖", "少糖"], "ice": ["常温", "温热"]}}}
+{"query": "有没有清爽不甜的茶？听说柠檬草本茶不错，常温少糖的来一杯", "attributes": {"drink_name": "柠檬草本茶", "options": {"size": ["常规"], "sugar": ["无糖", "少糖"], "ice": ["常温", "温热"]}}}
+{"query": "最近上火了，想喝点清热的无糖草", "attributes": {"drink_name": "柠檬草本茶", "options": {"size": ["常规"], "sugar": ["无糖", "少糖"], "ice": ["常温", "温热"]}}}
+{"query": "想要一杯酸酸甜甜的蓝莓味酸奶饮品，少糖少冰更健康", "attributes": {"drink_name": "蓝莓乳酸奶", "options": {"size": ["中杯", "大杯"], "sugar": ["少糖", "正常甜"], "ice": ["少冰", "正常冰"]}}}
+{"query": "想要一杯带布丁的抹茶奶茶，少糖少冰更清爽", "attributes": {"drink_name": "抹茶布丁奶茶", "options": {"size": ["中杯", "大杯"], "sugar": ["少糖", "正常甜"], "ice": ["少冰", "正常冰"], "topping": ["布丁"]}}}
+{"query": "想要一杯冰感十足的荔枝冰沙，少糖更健康一点", "attributes": {"drink_name": "荔枝冰沙", "options": {"size": ["大杯"], "sugar": ["少糖", "正常甜"], "ice": ["多冰"]}}}
+{"query": "来杯大杯的荔枝冰沙，多冰的，正常甜就好", "attributes": {"drink_name": "荔枝冰沙", "options": {"size": ["大杯"], "sugar": ["少糖", "正常甜"], "ice": ["多冰"]}}}
+{"query": "夏天就想喝荔枝味的冰沙，加满冰才够爽", "attributes": {"drink_name": "荔枝冰沙", "options": {"size": ["大杯"], "sugar": ["少糖", "正常甜"], "ice": ["多冰"]}}}
+{"query": "给我推荐个清爽不腻", "attributes": {"drink_name": "荔枝冰沙", "options": {"size": ["大杯"], "sugar": ["少糖", "正常甜"], "ice": ["多冰"]}}}
+{"query": "想要一杯甜甜的蜜桃味奶茶，加椰奶的那种，少糖少冰就好", "attributes": {"drink_name": "蜜桃椰奶茶", "options": {"size": ["中杯", "大杯"], "sugar": ["少糖", "正常甜"], "ice": ["少冰", "正常冰"]}}}
+{"query": "想要一杯酸酸甜甜的果茶，不要太甜，加多冰更爽口", "attributes": {"drink_name": "柠檬芒果冰茶", "options": {"size": ["中杯", "大杯"], "sugar": ["少糖", "正常甜"], "ice": ["多冰", "正常冰"]}}}
+{"query": "推荐一款适合夏天喝的冰茶，柠檬和芒果味的，正常甜就好", "attributes": {"drink_name": "柠檬芒果冰茶", "options": {"size": ["中杯", "大杯"], "sugar": ["少糖", "正常甜"], "ice": ["多冰", "正常冰"]}}}
+{"query": "有没有中杯的水果茶？喜欢冰一点的，少糖更健康", "attributes": {"drink_name": "柠檬芒果冰茶", "options": {"size": ["中杯", "大杯"], "sugar": ["少糖", "正常甜"], "ice": ["多冰", "正常冰"]}}}
+{"query": "想要一杯少糖的草莓奶茶，加西米，冰度正常就好", "attributes": {"drink_name": "草莓西米奶茶", "options": {"size": ["中杯"], "sugar": ["少糖", "正常甜"], "ice": ["正常冰"], "topping": ["西米"]}}}
+{"query": "推荐一款带西米的果味奶茶，不要太甜，中杯就行", "attributes": {"drink_name": "草莓西米奶茶", "options": {"size": ["中杯"], "sugar": ["少糖", "正常甜"], "ice": ["正常冰"], "topping": ["西米"]}}}
+{"query": "喜欢草莓口味的奶茶，少糖或正常甜都可以，要加西米和正常冰", "attributes": {"drink_name": "草莓西米奶茶", "options": {"size": ["中杯"], "sugar": ["少糖", "正常甜"], "ice": ["正常冰"], "topping": ["西米"]}}}
+{"query": "想要一杯有红豆的芒果奶茶，不要太甜，少冰就好", "attributes": {"drink_name": "芒果红豆奶茶", "options": {"size": ["中杯", "大杯"], "sugar": ["少糖", "正常甜"], "ice": ["少冰", "正常冰"], "topping": ["红豆"]}}}
+{"query": "有没有大杯的芒果奶茶可以加红豆？糖度要少糖的", "attributes": {"drink_name": "芒果红豆奶茶", "options": {"size": ["中杯", "大杯"], "sugar": ["少糖", "正常甜"], "ice": ["少冰", "正常冰"], "topping": ["红豆"]}}}
+{"query": "我喜欢喝果味奶茶，中杯，正常甜，加红豆，冰块少一点", "attributes": {"drink_name": "芒果红豆奶茶", "options": {"size": ["中杯", "大杯"], "sugar": ["少糖", "正常甜"], "ice": ["少冰", "正常冰"], "topping": ["红豆"]}}}
+{"query": "想要一杯巧克力味的奶盖茶，少糖少冰更健康", "attributes": {"drink_name": "巧克力奶盖茶", "options": {"size": ["中杯", "大杯"], "sugar": ["少糖", "正常甜"], "ice": ["少冰", "正常冰"]}}}
+{"query": "推荐一款有浓郁奶盖的奶茶，正常甜大杯的", "attributes": {"drink_name": "巧克力奶盖茶", "options": {"size": ["中杯", "大杯"], "sugar": ["少糖", "正常甜"], "ice": ["少冰", "正常冰"]}}}
+{"query": "有没有口感丝滑、带巧克力风味的茶饮？中杯少冰就好", "attributes": {"drink_name": "巧克力奶盖茶", "options": {"size": ["中杯", "大杯"], "sugar": ["少糖", "正常甜"], "ice": ["少冰", "正常冰"]}}}
+{"query": "想喝巧克力奶盖茶", "attributes": {"drink_name": "巧克力奶盖茶", "options": {"size": ["中杯", "大杯"], "sugar": ["少糖", "正常甜"], "ice": ["少冰", "正常冰"]}}}
+{"query": "想要一杯抹茶味的冰沙，带椰果的，不要太甜", "attributes": {"drink_name": "抹茶椰果冰沙", "options": {"size": ["大杯"], "sugar": ["少糖", "正常甜"], "ice": ["多冰"], "topping": ["椰果"]}}}
+{"query": "有没有大杯的抹茶冰沙推荐？最好加椰果，少糖多冰", "attributes": {"drink_name": "抹茶椰果冰沙", "options": {"size": ["大杯"], "sugar": ["少糖", "正常甜"], "ice": ["多冰"], "topping": ["椰果"]}}}
+{"query": "我喜欢喝清爽一点的奶茶，抹茶底加椰果的那种，正常甜多冰就行", "attributes": {"drink_name": "抹茶椰果冰沙", "options": {"size": ["大杯"], "sugar": ["少糖", "正常甜"], "ice": ["多冰"], "topping": ["椰果"]}}}
+{"query": "想要一杯果味的气泡奶茶，少糖少冰喝起来更清爽", "attributes": {"drink_name": "葡萄气泡奶茶", "options": {"size": ["中杯", "大杯"], "sugar": ["少糖", "正常甜"], "ice": ["少冰", "正常冰"]}}}
+{"query": "推荐一款有葡萄味的奶茶，最好是气泡口感的，正常甜正常冰就行", "attributes": {"drink_name": "葡萄气泡奶茶", "options": {"size": ["中杯", "大杯"], "sugar": ["少糖", "正常甜"], "ice": ["少冰", "正常冰"]}}}
+{"query": "我喜欢喝带气泡的奶茶，葡萄口味的中杯少糖来一杯", "attributes": {"drink_name": "葡萄气泡奶茶", "options": {"size": ["中杯", "大杯"], "sugar": ["少糖", "正常甜"], "ice": ["少冰", "正常冰"]}}}
+{"query": "想要一杯少糖的蜜桃味冰沙，加多冰，喝起来清爽一点", "attributes": {"drink_name": "蜜桃红茶冰沙", "options": {"size": ["大杯"], "sugar": ["少糖", "正常甜"], "ice": ["多冰"]}}}
+{"query": "大杯蜜桃红茶冰沙，正常甜多冰，夏天喝好爽", "attributes": {"drink_name": "蜜桃红茶冰沙", "options": {"size": ["大杯"], "sugar": ["少糖", "正常甜"], "ice": ["多冰"]}}}
+{"query": "有没有桃子香味浓一点的冰沙？少糖多冰的那种", "attributes": {"drink_name": "蜜桃红茶冰沙", "options": {"size": ["大杯"], "sugar": ["少糖", "正常甜"], "ice": ["多冰"]}}}
+{"query": "想要一杯清爽的果茶，不要太甜，少冰最好", "attributes": {"drink_name": "奇异果果茶", "options": {"size": ["中杯", "大杯"], "sugar": ["少糖", "正常甜"], "ice": ["去冰", "少冰", "正常冰"]}}}
+{"query": "推荐一款酸酸甜甜的果味茶饮，正常甜度中杯的", "attributes": {"drink_name": "奇异果果茶", "options": {"size": ["中杯", "大杯"], "sugar": ["少糖", "正常甜"], "ice": ["去冰", "少冰", "正常冰"]}}}
+{"query": "有没有适合夏天喝的水果茶？希望是大杯去冰的", "attributes": {"drink_name": "奇异果果茶", "options": {"size": ["中杯", "大杯"], "sugar": ["少糖", "正常甜"], "ice": ["去冰", "少冰", "正常冰"]}}}
+{"query": "想喝奇异果味道的茶", "attributes": {"drink_name": "奇异果果茶", "options": {"size": ["中杯", "大杯"], "sugar": ["少糖", "正常甜"], "ice": ["去冰", "少冰", "正常冰"]}}}
+{"query": "想要一杯荔枝味的红茶，少糖少冰就好", "attributes": {"drink_name": "荔枝红茶", "options": {"size": ["中杯", "大杯"], "sugar": ["无糖", "少糖", "半糖"], "ice": ["去冰", "少冰", "正常冰"]}}}
+{"query": "想要一杯少糖少冰的杨枝甘露，加西米露，大杯的", "attributes": {"drink_name": "杨枝甘露", "options": {"size": ["大杯"], "sugar": ["少糖", "正常甜"], "ice": ["少冰", "正常冰"], "topping": ["西米露"]}}}
+{"query": "想要一杯冰一点的椰香芒果冰沙，少甜就好，大杯的", "attributes": {"drink_name": "椰香芒果冰沙", "options": {"size": ["大杯"], "sugar": ["少甜", "正常甜"], "ice": ["多冰"]}}}
+{"query": "想要一杯草莓味的奶盖茶，少糖少冰喝起来不会太腻", "attributes": {"drink_name": "草莓芝芝", "options": {"size": ["中杯", "大杯"], "sugar": ["少糖", "正常甜"], "ice": ["去冰", "少冰", "正常冰"]}}}
+{"query": "推荐一款有水果味的奶茶，最好是带芝士奶盖的，正常甜加中杯", "attributes": {"drink_name": "草莓芝芝", "options": {"size": ["中杯", "大杯"], "sugar": ["少糖", "正常甜"], "ice": ["去冰", "少冰", "正常冰"]}}}
+{"query": "想要一杯暖暖的桂圆红枣茶，少糖就好，喝起来不要太甜", "attributes": {"drink_name": "桂圆红枣茶", "options": {"size": ["常规"], "sugar": ["少糖", "正常甜"], "ice": ["常温", "温热"]}}}
+{"query": "推荐一款温热的养生奶茶，不要太甜，桂圆红枣茶可以吗？", "attributes": {"drink_name": "桂圆红枣茶", "options": {"size": ["常规"], "sugar": ["少糖", "正常甜"], "ice": ["常温", "温热"]}}}
+{"query": "来杯常温的桂圆红枣茶，正常甜度，适合冬天喝的那种", "attributes": {"drink_name": "桂圆红枣茶", "options": {"size": ["常规"], "sugar": ["少糖", "正常甜"], "ice": ["常温", "温热"]}}}
+{"query": "想要一杯香香的玫瑰奶茶，少糖少冰喝起来不会腻", "attributes": {"drink_name": "玫瑰奶茶", "options": {"size": ["中杯", "大杯"], "sugar": ["少糖", "正常甜"], "ice": ["少冰", "正常冰", "常温"]}}}
+{"query": "想要一杯少糖的柚子蜜茶，不要太冰，喝起来清爽一点", "attributes": {"drink_name": "柚子蜜茶", "options": {"size": ["中杯"], "sugar": ["少糖", "正常甜"], "ice": ["去冰", "少冰", "正常冰"]}}}
+{"query": "推荐个酸甜口的果茶，这杯柚子蜜茶可以做少冰吗？", "attributes": {"drink_name": "柚子蜜茶", "options": {"size": ["中杯"], "sugar": ["少糖", "正常甜"], "ice": ["去冰", "少冰", "正常冰"]}}}
+{"query": "我喜欢喝带点果香的茶，这杯柚子蜜茶能做成", "attributes": {"drink_name": "柚子蜜茶", "options": {"size": ["中杯"], "sugar": ["少糖", "正常甜"], "ice": ["去冰", "少冰", "正常冰"]}}}
+{"query": "想要一杯无糖的草本茶饮，常温或温热的，喝起来能清火养生", "attributes": {"drink_name": "草本凉茶", "options": {"size": ["常规"], "sugar": ["无糖"], "ice": ["常温", "温热"]}}}
+{"query": "想要一杯少糖少冰的奶茶，里面加红豆和布丁，口感丰富一点", "attributes": {"drink_name": "红豆布丁奶茶", "options": {"size": ["中杯"], "sugar": ["少糖", "正常甜"], "ice": ["少冰", "正常冰"], "topping": ["红豆", "布丁"]}}}
+{"query": "推荐一款不会太甜的奶茶，中杯就好，加红豆和布丁，冰块少放", "attributes": {"drink_name": "红豆布丁奶茶", "options": {"size": ["中杯"], "sugar": ["少糖", "正常甜"], "ice": ["少冰", "正常冰"], "topping": ["红豆", "布丁"]}}}
+{"query": "我喜欢喝正常甜的奶茶，但冰要少一点，要", "attributes": {"drink_name": "红豆布丁奶茶", "options": {"size": ["中杯"], "sugar": ["少糖", "正常甜"], "ice": ["少冰", "正常冰"], "topping": ["红豆", "布丁"]}}}
+{"query": "想要一杯带西米的奶茶，不要太甜，少糖就好", "attributes": {"drink_name": "椰香西米露", "options": {"size": ["大杯"], "sugar": ["少糖", "正常甜"], "ice": ["少冰", "正常冰"], "topping": ["西米露"]}}}
+{"query": "有没有椰香风味的奶茶推荐？想要大杯少冰的", "attributes": {"drink_name": "椰香西米露", "options": {"size": ["大杯"], "sugar": ["少糖", "正常甜"], "ice": ["少冰", "正常冰"], "topping": ["西米露"]}}}
+{"query": "来杯有西米露的奶茶，正常甜正常冰就可以了", "attributes": {"drink_name": "椰香西米露", "options": {"size": ["大杯"], "sugar": ["少糖", "正常甜"], "ice": ["少冰", "正常冰"], "topping": ["西米露"]}}}
+{"query": "我喜欢喝有点热带风味的奶茶，加西", "attributes": {"drink_name": "椰香西米露", "options": {"size": ["大杯"], "sugar": ["少糖", "正常甜"], "ice": ["少冰", "正常冰"], "topping": ["西米露"]}}}
+{"query": "想要一杯少糖的紫薯鲜奶，温热的喝起来比较舒服", "attributes": {"drink_name": "紫薯鲜奶", "options": {"size": ["常规"], "sugar": ["少糖", "正常甜"], "ice": ["常温", "温热"]}}}
+{"query": "想要一杯带坚果香的奶茶，少糖少冰更健康", "attributes": {"drink_name": "杏仁奶茶", "options": {"size": ["中杯", "大杯"], "sugar": ["少糖", "正常甜"], "ice": ["少冰", "正常冰"]}}}
+{"query": "想要一杯少糖少冰的茶饮，口感清爽一点的", "attributes": {"drink_name": "龙眼蜂蜜茶", "options": {"size": ["中杯"], "sugar": ["少糖", "正常甜"], "ice": ["少冰", "正常冰"]}}}
+{"query": "有没有蜂蜜调制的果香茶推荐？最好中杯少糖", "attributes": {"drink_name": "龙眼蜂蜜茶", "options": {"size": ["中杯"], "sugar": ["少糖", "正常甜"], "ice": ["少冰", "正常冰"]}}}
+{"query": "喜欢龙眼味道的饮品，要正常甜和正常冰的搭配", "attributes": {"drink_name": "龙眼蜂蜜茶", "options": {"size": ["中杯"], "sugar": ["少糖", "正常甜"], "ice": ["少冰", "正常冰"]}}}
+{"query": "想喝点清甜不腻的", "attributes": {"drink_name": "龙眼蜂蜜茶", "options": {"size": ["中杯"], "sugar": ["少糖", "正常甜"], "ice": ["少冰", "正常冰"]}}}
+{"query": "想要一杯少糖的芒果青茶，冰块要少一点，喝起来清爽不腻", "attributes": {"drink_name": "芒果青茶", "options": {"size": ["大杯"], "sugar": ["少糖", "正常甜"], "ice": ["去冰", "少冰", "正常冰", "多冰"]}}}
+{"query": "大杯芒果青茶，正常甜多冰，夏天就喜欢这么喝", "attributes": {"drink_name": "芒果青茶", "options": {"size": ["大杯"], "sugar": ["少糖", "正常甜"], "ice": ["去冰", "少冰", "正常冰", "多冰"]}}}
+{"query": "有没有什么推荐的果茶？想喝芒果味的，不要太甜", "attributes": {"drink_name": "芒果青茶", "options": {"size": ["大杯"], "sugar": ["少糖", "正常甜"], "ice": ["去冰", "少冰", "正常冰", "多冰"]}}}
+{"query": "想要一杯少糖少冰的柠檬蜂蜜水，喝起来清爽一点", "attributes": {"drink_name": "柠檬蜂蜜水", "options": {"size": ["中杯"], "sugar": ["少糖", "正常甜"], "ice": ["少冰", "正常冰"]}}}
+{"query": "推荐一款酸酸甜甜的饮料，正常甜正常冰就行", "attributes": {"drink_name": "柠檬蜂蜜水", "options": {"size": ["中杯"], "sugar": ["少糖", "正常甜"], "ice": ["少冰", "正常冰"]}}}
+{"query": "有点渴了，想来杯中杯的柠檬蜂蜜水，少糖少冰最刚好", "attributes": {"drink_name": "柠檬蜂蜜水", "options": {"size": ["中杯"], "sugar": ["少糖", "正常甜"], "ice": ["少冰", "正常冰"]}}}
+{"query": "喜欢酸味明显的", "attributes": {"drink_name": "柠檬蜂蜜水", "options": {"size": ["中杯"], "sugar": ["少糖", "正常甜"], "ice": ["少冰", "正常冰"]}}}
+{"query": "想要一杯少糖少冰的果茶，口感清爽一点", "attributes": {"drink_name": "桑葚果茶", "options": {"size": ["大杯"], "sugar": ["少糖", "正常甜"], "ice": ["少冰", "正常冰"]}}}
+{"query": "推荐一款酸甜适中的果茶，大杯少糖正常冰", "attributes": {"drink_name": "桑葚果茶", "options": {"size": ["大杯"], "sugar": ["少糖", "正常甜"], "ice": ["少冰", "正常冰"]}}}
+{"query": "想要一杯少糖的可可奶盖茶，不要太甜，带点冰的", "attributes": {"drink_name": "可可奶盖茶", "options": {"size": ["中杯"], "sugar": ["少糖", "正常甜"], "ice": ["去冰", "正常冰"]}}}
+{"query": "推荐一款可可味浓郁的奶盖茶，中杯正常甜，加正常冰", "attributes": {"drink_name": "可可奶盖茶", "options": {"size": ["中杯"], "sugar": ["少糖", "正常甜"], "ice": ["去冰", "正常冰"]}}}
+{"query": "有没有巧克力风味的奶茶？想喝可可奶盖，少糖去冰", "attributes": {"drink_name": "可可奶盖茶", "options": {"size": ["中杯"], "sugar": ["少糖", "正常甜"], "ice": ["去冰", "正常冰"]}}}
+{"query": "想要一杯清新的果味绿茶，不要太甜，加点冰就好", "attributes": {"drink_name": "菠萝绿茶", "options": {"size": ["中杯", "大杯"], "sugar": ["少糖", "正常甜"], "ice": ["少冰", "正常冰", "多冰"]}}}
+{"query": "推荐个中杯少糖少冰的水果茶，我喜欢酸酸甜甜的口感", "attributes": {"drink_name": "菠萝绿茶", "options": {"size": ["中杯", "大杯"], "sugar": ["少糖", "正常甜"], "ice": ["少冰", "正常冰", "多冰"]}}}
+{"query": "来杯大杯的菠萝味绿茶，正常甜正常冰就行", "attributes": {"drink_name": "菠萝绿茶", "options": {"size": ["中杯", "大杯"], "sugar": ["少糖", "正常甜"], "ice": ["少冰", "正常冰", "多冰"]}}}
+{"query": "有没有热带水果风味", "attributes": {"drink_name": "菠萝绿茶", "options": {"size": ["中杯", "大杯"], "sugar": ["少糖", "正常甜"], "ice": ["少冰", "正常冰", "多冰"]}}}
+{"query": "想要一杯无糖少冰的柠檬饮品，清爽一点的", "attributes": {"drink_name": "奇亚籽柠檬水", "options": {"size": ["中杯"], "sugar": ["无糖", "少糖"], "ice": ["少冰", "正常冰"]}}}
+{"query": "推荐一款适合减脂喝的少糖柠檬水，加奇亚籽的", "attributes": {"drink_name": "奇亚籽柠檬水", "options": {"size": ["中杯"], "sugar": ["无糖", "少糖"], "ice": ["少冰", "正常冰"]}}}
+{"query": "有没有不含糖但有嚼感的冰饮？想喝点清新的", "attributes": {"drink_name": "奇亚籽柠檬水", "options": {"size": ["中杯"], "sugar": ["无糖", "少糖"], "ice": ["少冰", "正常冰"]}}}
+{"query": "来杯中杯奇亚", "attributes": {"drink_name": "奇亚籽柠檬水", "options": {"size": ["中杯"], "sugar": ["无糖", "少糖"], "ice": ["少冰", "正常冰"]}}}
+{"query": "想要一杯少糖的桂花酸梅汤，常温就好，不要太甜腻", "attributes": {"drink_name": "桂花酸梅汤", "options": {"size": ["常规"], "sugar": ["少糖", "正常甜"], "ice": ["常温", "温热"]}}}
+{"query": "来杯桂花酸梅汤吧，正常甜温热的，最近嗓子不舒服想喝点温和的", "attributes": {"drink_name": "桂花酸梅汤", "options": {"size": ["常规"], "sugar": ["少糖", "正常甜"], "ice": ["常温", "温热"]}}}
+{"query": "想要一杯奶香浓郁的红茶奶茶，少糖少冰就好", "attributes": {"drink_name": "奶香红茶", "options": {"size": ["中杯", "大杯"], "sugar": ["少糖", "正常甜"], "ice": ["少冰", "正常冰", "温热"]}}}
+{"query": "推荐一款经典的奶香红茶，正常甜大杯的", "attributes": {"drink_name": "奶香红茶", "options": {"size": ["中杯", "大杯"], "sugar": ["少糖", "正常甜"], "ice": ["少冰", "正常冰", "温热"]}}}
+{"query": "来杯温热的奶茶，不要太甜，中杯就行", "attributes": {"drink_name": "奶香红茶", "options": {"size": ["中杯", "大杯"], "sugar": ["少糖", "正常甜"], "ice": ["少冰", "正常冰", "温热"]}}}
+{"query": "想喝点暖暖的，奶香红茶温热少", "attributes": {"drink_name": "奶香红茶", "options": {"size": ["中杯", "大杯"], "sugar": ["少糖", "正常甜"], "ice": ["少冰", "正常冰", "温热"]}}}
+{"query": "想要一杯甜甜的焦糖味奶茶，不要太冰，正常甜度就好", "attributes": {"drink_name": "焦糖玛奇朵奶茶", "options": {"size": ["中杯", "大杯"], "sugar": ["少糖", "半糖", "正常甜"], "ice": ["少冰", "正常冰", "常温"]}}}
+{"query": "推荐一款有焦糖香的奶茶，少糖少冰的版本", "attributes": {"drink_name": "焦糖玛奇朵奶茶", "options": {"size": ["中杯", "大杯"], "sugar": ["少糖", "半糖", "正常甜"], "ice": ["少冰", "正常冰", "常温"]}}}
+{"query": "有没有口感顺滑、带点焦糖风味的奶茶？大杯正常冰的", "attributes": {"drink_name": "焦糖玛奇朵奶茶", "options": {"size": ["中杯", "大杯"], "sugar": ["少糖", "半糖", "正常甜"], "ice": ["少冰", "正常冰", "常温"]}}}
+{"query": "想要一杯少糖的椰香抹茶拿铁，加点冰喝起来更清爽", "attributes": {"drink_name": "椰香抹茶拿铁", "options": {"size": ["常规"], "sugar": ["少糖", "正常甜"], "ice": ["少冰", "正常冰", "温热"]}}}
+{"query": "推荐一个味道清新不甜腻的奶茶，椰香和抹茶结合的就好", "attributes": {"drink_name": "椰香抹茶拿铁", "options": {"size": ["常规"], "sugar": ["少糖", "正常甜"], "ice": ["少冰", "正常冰", "温热"]}}}
+{"query": "来杯温热的椰香抹茶拿铁，正常甜就好，天冷", "attributes": {"drink_name": "椰香抹茶拿铁", "options": {"size": ["常规"], "sugar": ["少糖", "正常甜"], "ice": ["少冰", "正常冰", "温热"]}}}
+{"query": "想要一杯清淡点的茶饮，少糖去冰的桂花绿茶", "attributes": {"drink_name": "桂花绿茶", "options": {"size": ["中杯"], "sugar": ["少糖", "正常甜"], "ice": ["去冰", "正常冰"]}}}
+{"query": "想要一杯带燕麦的奶昔，草莓味的，少甜少冰更健康一点", "attributes": {"drink_name": "草莓燕麦奶昔", "options": {"size": ["大杯"], "sugar": ["少甜", "正常甜"], "ice": ["少冰", "正常冰"], "topping": ["燕麦"]}}}
+{"query": "想要一杯少糖的蓝柑气泡茶，多冰的，喝起来清爽一点", "attributes": {"drink_name": "蓝柑气泡茶", "options": {"size": ["大杯"], "sugar": ["少糖", "正常甜"], "ice": ["多冰"]}}}
+{"query": "大杯的蓝柑气泡茶，正常甜多冰，夏天喝好爽", "attributes": {"drink_name": "蓝柑气泡茶", "options": {"size": ["大杯"], "sugar": ["少糖", "正常甜"], "ice": ["多冰"]}}}
+{"query": "有没有带气泡的果茶推荐？要少糖多冰的", "attributes": {"drink_name": "蓝柑气泡茶", "options": {"size": ["大杯"], "sugar": ["少糖", "正常甜"], "ice": ["多冰"]}}}
+{"query": "想要一杯酸甜口的茶饮，少糖少冰喝起来清爽一点", "attributes": {"drink_name": "西柚多多绿茶", "options": {"size": ["中杯", "大杯"], "sugar": ["少糖", "正常甜"], "ice": ["少冰", "正常冰", "多冰"]}}}
+{"query": "推荐一款有果味的绿茶，不要太甜，冰块正常就好", "attributes": {"drink_name": "西柚多多绿茶", "options": {"size": ["中杯", "大杯"], "sugar": ["少糖", "正常甜"], "ice": ["少冰", "正常冰", "多冰"]}}}
+{"query": "我喜欢西柚的味道，来一杯带气泡感的冰绿茶，中杯少糖", "attributes": {"drink_name": "西柚多多绿茶", "options": {"size": ["中杯", "大杯"], "sugar": ["少糖", "正常甜"], "ice": ["少冰", "正常冰", "多冰"]}}}
+{"query": "想要一杯少甜的火龙果鲜奶，冰块少一点更喜欢", "attributes": {"drink_name": "火龙果鲜奶", "options": {"size": ["常规"], "sugar": ["少甜", "正常甜"], "ice": ["少冰", "正常冰"]}}}
+{"query": "想要一杯少糖少冰的蜂蜜柚子茶，口感清爽一点", "attributes": {"drink_name": "蜂蜜柚子茶", "options": {"size": ["中杯"], "sugar": ["少糖", "正常甜"], "ice": ["少冰", "正常冰", "温热"]}}}
+{"query": "推荐一个温热的蜂蜜柚子茶，不要太甜", "attributes": {"drink_name": "蜂蜜柚子茶", "options": {"size": ["中杯"], "sugar": ["少糖", "正常甜"], "ice": ["少冰", "正常冰", "温热"]}}}
+{"query": "来杯中杯正常甜正常冰的蜂蜜柚子茶", "attributes": {"drink_name": "蜂蜜柚子茶", "options": {"size": ["中杯"], "sugar": ["少糖", "正常甜"], "ice": ["少冰", "正常冰", "温热"]}}}
+{"query": "想喝点酸酸甜甜的热饮，蜂蜜柚", "attributes": {"drink_name": "蜂蜜柚子茶", "options": {"size": ["中杯"], "sugar": ["少糖", "正常甜"], "ice": ["少冰", "正常冰", "温热"]}}}
+{"query": "想要一杯暖暖的椰香奶茶，加紫米，不要太甜", "attributes": {"drink_name": "椰香紫米露", "options": {"size": ["大杯"], "sugar": ["少糖", "正常甜"], "ice": ["常温", "温热"], "topping": ["紫米"]}}}
+{"query": "想要一杯少糖的桂圆枸杞奶茶，中杯常温的，最近上火想喝点温和的", "attributes": {"drink_name": "桂圆枸杞奶茶", "options": {"size": ["中杯"], "sugar": ["少糖", "正常甜"], "ice": ["常温", "温热"]}}}
+{"query": "想要一杯清新的茶饮，青柠和薄荷味要明显，少糖少冰最理想", "attributes": {"drink_name": "青柠薄荷茶", "options": {"size": ["大杯"], "sugar": ["少糖", "正常甜"], "ice": ["去冰", "少冰", "正常冰", "多冰"]}}}
+{"query": "想要一杯带奶盖的可可，不要太甜，少糖就好", "attributes": {"drink_name": "奶盖可可", "options": {"size": ["中杯", "大杯"], "sugar": ["少糖", "正常甜"], "ice": ["去冰", "正常冰"]}}}
+{"query": "想要一杯酸酸甜甜的果茶，少糖多冰，大杯的柠檬百香果茶怎么样？", "attributes": {"drink_name": "柠檬百香果茶", "options": {"size": ["大杯"], "sugar": ["少糖", "正常甜"], "ice": ["正常冰", "多冰"]}}}
+{"query": "想要一杯少糖的草莓西米露，加正常冰，喝起来甜甜又不会太腻", "attributes": {"drink_name": "草莓西米露", "options": {"size": ["中杯"], "sugar": ["少糖", "正常甜"], "ice": ["正常冰"], "topping": ["西米露"]}}}
+{"query": "想要一杯焦糖香香的奶茶，不要太甜，少糖就好，加点海盐的风味", "attributes": {"drink_name": "焦糖海盐奶茶", "options": {"size": ["常规"], "sugar": ["少糖", "正常甜", "多甜"], "ice": ["少冰", "正常冰", "常温"]}}}
+{"query": "想要一杯少糖少冰的果茶，口感清爽一点的", "attributes": {"drink_name": "苹果柠檬茶", "options": {"size": ["中杯", "大杯"], "sugar": ["少糖", "正常甜"], "ice": ["少冰", "正常冰", "多冰"]}}}
+{"query": "想要一杯养生的茶，无糖少冰，喝起来温和不刺激", "attributes": {"drink_name": "菊花枸杞茶", "options": {"size": ["常规"], "sugar": ["无糖", "少糖"], "ice": ["常温", "温热"]}}}
+{"query": "推荐一款适合冬天喝的温热饮品，不要太甜，感觉菊花枸杞茶挺合适的", "attributes": {"drink_name": "菊花枸杞茶", "options": {"size": ["常规"], "sugar": ["无糖", "少糖"], "ice": ["常温", "温热"]}}}
+{"query": "有没有什么奶茶是无糖又能暖身的？听说菊花枸杞茶不错", "attributes": {"drink_name": "菊花枸杞茶", "options": {"size": ["常规"], "sugar": ["无糖", "少糖"], "ice": ["常温", "温热"]}}}
+{"query": "想要一杯清甜的蜜瓜味奶茶，不要太甜，少冰喝起来更清爽", "attributes": {"drink_name": "蜜瓜牛乳", "options": {"size": ["中杯"], "sugar": ["少甜", "正常甜"], "ice": ["少冰", "正常冰"]}}}
+{"query": "推荐一款中杯的果香奶饮，少甜少冰，蜜瓜味的最好", "attributes": {"drink_name": "蜜瓜牛乳", "options": {"size": ["中杯"], "sugar": ["少甜", "正常甜"], "ice": ["少冰", "正常冰"]}}}
+{"query": "想喝蜜瓜牛乳，正常甜加正常冰，喜欢这种清", "attributes": {"drink_name": "蜜瓜牛乳", "options": {"size": ["中杯"], "sugar": ["少甜", "正常甜"], "ice": ["少冰", "正常冰"]}}}
+{"query": "想要一杯少糖的热饮，口感顺滑带点红枣香味的奶昔", "attributes": {"drink_name": "红枣奶昔", "options": {"size": ["常规"], "sugar": ["少糖", "正常甜"], "ice": ["常温"]}}}
+{"query": "想要一杯果味浓郁的奶茶，少糖少冰更健康", "attributes": {"drink_name": "葡萄多多", "options": {"size": ["中杯", "大杯"], "sugar": ["少糖", "正常甜"], "ice": ["少冰", "正常冰"]}}}
+{"query": "想要一杯带点咖啡香的奶茶，少糖少冰口感清爽一点", "attributes": {"drink_name": "榛果拿铁奶茶", "options": {"size": ["中杯", "大杯"], "sugar": ["少糖", "半糖", "正常甜"], "ice": ["去冰", "少冰", "正常冰", "常温"]}}}
+{"query": "想要一杯少糖的杨梅果茶，加多冰，夏天喝特别清爽", "attributes": {"drink_name": "杨梅果茶", "options": {"size": ["大杯"], "sugar": ["少糖", "正常甜"], "ice": ["正常冰", "多冰"]}}}
+{"query": "来杯大杯杨梅果茶，正常甜就好，不要太甜腻", "attributes": {"drink_name": "杨梅果茶", "options": {"size": ["大杯"], "sugar": ["少糖", "正常甜"], "ice": ["正常冰", "多冰"]}}}
+{"query": "最近喜欢酸酸甜甜的果茶，有没有冰感足一点的推荐？", "attributes": {"drink_name": "杨梅果茶", "options": {"size": ["大杯"], "sugar": ["少糖", "正常甜"], "ice": ["正常冰", "多冰"]}}}
+{"query": "想要一杯少糖少冰的果味奶茶，口感清爽一点", "attributes": {"drink_name": "蜜桃多多", "options": {"size": ["中杯"], "sugar": ["少糖", "正常甜"], "ice": ["少冰", "正常冰"]}}}
+{"query": "推荐一款甜甜的桃子味奶茶，加点冰块就好", "attributes": {"drink_name": "蜜桃多多", "options": {"size": ["中杯"], "sugar": ["少糖", "正常甜"], "ice": ["少冰", "正常冰"]}}}
+{"query": "想要一杯少糖少冰的芒果芝芝，大杯的，喜欢清爽一点的口感", "attributes": {"drink_name": "芒果芝芝", "options": {"size": ["大杯"], "sugar": ["少糖", "正常甜"], "ice": ["少冰", "正常冰"]}}}
+{"query": "推荐一款芒果味的奶盖茶，不要太甜，加冰正常就好", "attributes": {"drink_name": "芒果芝芝", "options": {"size": ["大杯"], "sugar": ["少糖", "正常甜"], "ice": ["少冰", "正常冰"]}}}
+{"query": "想要一杯花香果香结合的茶，少糖少冰更健康", "attributes": {"drink_name": "玫瑰荔枝茶", "options": {"size": ["中杯", "大杯"], "sugar": ["少糖", "正常甜"], "ice": ["少冰", "正常冰"]}}}
+{"query": "想喝一杯少甜的香蕉牛奶昔，中杯正常冰就好", "attributes": {"drink_name": "香蕉牛奶昔", "options": {"size": ["中杯"], "sugar": ["少甜", "正常甜"], "ice": ["正常冰"]}}}
+{"query": "想要一杯少糖少冰的果味奶茶，最好里面有草莓果肉，喝起来清新一点", "attributes": {"drink_name": "樱花草莓奶茶", "options": {"size": ["中杯"], "sugar": ["少糖", "正常甜"], "ice": ["少冰", "正常冰"], "topping": ["草莓果肉"]}}}
+{"query": "有没有樱花味的奶茶推荐？想喝中杯的，加草莓果肉，不要太甜", "attributes": {"drink_name": "樱花草莓奶茶", "options": {"size": ["中杯"], "sugar": ["少糖", "正常甜"], "ice": ["少冰", "正常冰"], "topping": ["草莓果肉"]}}}
+{"query": "最近喜欢清爽一点的奶茶，少糖少冰，带真实", "attributes": {"drink_name": "樱花草莓奶茶", "options": {"size": ["中杯"], "sugar": ["少糖", "正常甜"], "ice": ["少冰", "正常冰"], "topping": ["草莓果肉"]}}}
+{"query": "想要一杯茶香浓郁的红茶玛奇朵，少糖少冰更健康", "attributes": {"drink_name": "红茶玛奇朵", "options": {"size": ["中杯", "大杯"], "sugar": ["少糖", "正常甜"], "ice": ["少冰", "正常冰", "常温"]}}}
+{"query": "想要一杯清新的奶茶，少糖少冰喝起来不腻的", "attributes": {"drink_name": "薄荷奶茶", "options": {"size": ["中杯"], "sugar": ["少糖", "正常甜"], "ice": ["少冰", "正常冰"]}}}
+{"query": "有没有带薄荷味的奶茶？想试试清爽一点的口感，中杯少冰正常甜就好", "attributes": {"drink_name": "薄荷奶茶", "options": {"size": ["中杯"], "sugar": ["少糖", "正常甜"], "ice": ["少冰", "正常冰"]}}}
+{"query": "推荐一款喝了之后感觉凉丝丝的奶茶吧，不要太甜，最好有点清凉感", "attributes": {"drink_name": "薄荷奶茶", "options": {"size": ["中杯"], "sugar": ["少糖", "正常甜"], "ice": ["少冰", "正常冰"]}}}
+{"query": "想要一杯少糖少冰的芝士乌龙茶，大杯的，喜欢茶味清爽带点咸香奶盖的", "attributes": {"drink_name": "芝士乌龙茶", "options": {"size": ["大杯"], "sugar": ["少糖", "正常甜"], "ice": ["少冰", "正常冰"]}}}
+{"query": "推荐一款不太甜的奶茶，不要太冰，茶底是乌龙，上面有芝士奶盖的，要大杯", "attributes": {"drink_name": "芝士乌龙茶", "options": {"size": ["大杯"], "sugar": ["少糖", "正常甜"], "ice": ["少冰", "正常冰"]}}}
+{"query": "想要一杯热的黑糖桂圆奶茶，少糖就好，不要太甜", "attributes": {"drink_name": "黑糖桂圆奶茶", "options": {"size": ["中杯"], "sugar": ["少糖", "正常甜", "多甜"], "ice": ["常温", "温热"]}}}
+{"query": "想要一杯酸酸甜甜的茶，山楂味的，少糖多冰的那种", "attributes": {"drink_name": "山楂柠檬茶", "options": {"size": ["中杯"], "sugar": ["少糖", "正常甜"], "ice": ["正常冰", "多冰"]}}}
+{"query": "有没有口感清爽、带点果酸的奶茶？我想喝山楂柠檬茶，正常甜正常冰就行", "attributes": {"drink_name": "山楂柠檬茶", "options": {"size": ["中杯"], "sugar": ["少糖", "正常甜"], "ice": ["正常冰", "多冰"]}}}
+{"query": "推荐一款开胃的果茶，中杯少糖多冰", "attributes": {"drink_name": "山楂柠檬茶", "options": {"size": ["中杯"], "sugar": ["少糖", "正常甜"], "ice": ["正常冰", "多冰"]}}}
+{"query": "想要一杯少糖少冰的蜜桃乳酸菌，喝起来清爽一点", "attributes": {"drink_name": "蜜桃乳酸菌", "options": {"size": ["大杯"], "sugar": ["少糖", "正常甜"], "ice": ["少冰", "正常冰"]}}}
+{"query": "推荐一款带果香的奶茶，不要太甜，加点冰就好", "attributes": {"drink_name": "蜜桃乳酸菌", "options": {"size": ["大杯"], "sugar": ["少糖", "正常甜"], "ice": ["少冰", "正常冰"]}}}
+{"query": "想喝一杯少糖少冰的花茶，有点养生感觉的", "attributes": {"drink_name": "洛神花茶", "options": {"size": ["常规"], "sugar": ["少糖", "正常甜"], "ice": ["少冰", "正常冰", "温热"]}}}
+{"query": "有没有什么花香味的茶推荐？想要温热的，不要太甜", "attributes": {"drink_name": "洛神花茶", "options": {"size": ["常规"], "sugar": ["少糖", "正常甜"], "ice": ["少冰", "正常冰", "温热"]}}}
+{"query": "来杯洛神花茶，正常甜少冰，名字好听味道也要清新", "attributes": {"drink_name": "洛神花茶", "options": {"size": ["常规"], "sugar": ["少糖", "正常甜"], "ice": ["少冰", "正常冰", "温热"]}}}
+{"query": "想要一杯冰多一点的蜜瓜味冰沙，少甜就好", "attributes": {"drink_name": "蜜瓜冰沙", "options": {"size": ["大杯"], "sugar": ["少甜", "正常甜"], "ice": ["多冰"]}}}
+{"query": "推荐一款大杯的蜜瓜冰沙，我喜欢正常甜和多冰的", "attributes": {"drink_name": "蜜瓜冰沙", "options": {"size": ["大杯"], "sugar": ["少甜", "正常甜"], "ice": ["多冰"]}}}
+{"query": "夏天好热，想喝点清爽的，有蜜瓜味道的冰沙吗？要多冰的", "attributes": {"drink_name": "蜜瓜冰沙", "options": {"size": ["大杯"], "sugar": ["少甜", "正常甜"], "ice": ["多冰"]}}}
+{"query": "想要一杯清新的橙子味绿茶，少糖少冰，喝起来不要太甜腻", "attributes": {"drink_name": "橙子绿茶", "options": {"size": ["中杯", "大杯"], "sugar": ["少糖", "正常甜"], "ice": ["去冰", "少冰", "正常冰", "多冰"]}}}
+{"query": "来杯橙子绿茶，大杯正常甜多冰，夏天就要冰冰凉的", "attributes": {"drink_name": "橙子绿茶", "options": {"size": ["中杯", "大杯"], "sugar": ["少糖", "正常甜"], "ice": ["去冰", "少冰", "正常冰", "多冰"]}}}
+{"query": "最近喜欢果香和茶香混合的口感，推荐个少糖去冰", "attributes": {"drink_name": "橙子绿茶", "options": {"size": ["中杯", "大杯"], "sugar": ["少糖", "正常甜"], "ice": ["去冰", "少冰", "正常冰", "多冰"]}}}
+{"query": "想要一杯带燕麦的奶茶，少糖少冰口感清爽一点", "attributes": {"drink_name": "椰香燕麦奶茶", "options": {"size": ["中杯"], "sugar": ["少糖", "正常甜"], "ice": ["少冰", "正常冰"], "topping": ["燕麦"]}}}
+{"query": "推荐个有嚼劲小料的奶茶，不要太甜，加燕麦的那种", "attributes": {"drink_name": "椰香燕麦奶茶", "options": {"size": ["中杯"], "sugar": ["少糖", "正常甜"], "ice": ["少冰", "正常冰"], "topping": ["燕麦"]}}}
+{"query": "我喜欢喝椰香风味的奶茶，中杯正常冰少糖就好", "attributes": {"drink_name": "椰香燕麦奶茶", "options": {"size": ["中杯"], "sugar": ["少糖", "正常甜"], "ice": ["少冰", "正常冰"], "topping": ["燕麦"]}}}
+{"query": "想要一杯少糖少冰的龙井奶茶，喜欢茶香浓郁一点的口感", "attributes": {"drink_name": "龙井奶茶", "options": {"size": ["常规"], "sugar": ["少糖", "正常甜"], "ice": ["少冰", "正常冰", "温热"]}}}
+{"query": "来杯常规尺寸的龙井奶茶，正常甜带点冰的", "attributes": {"drink_name": "龙井奶茶", "options": {"size": ["常规"], "sugar": ["少糖", "正常甜"], "ice": ["少冰", "正常冰", "温热"]}}}
+{"query": "最近爱上龙井茶的味道，想试试温热的龙井奶茶，糖度不要太高", "attributes": {"drink_name": "龙井奶茶", "options": {"size": ["常规"], "sugar": ["少糖", "正常甜"], "ice": ["少冰", "正常冰", "温热"]}}}
+{"query": "想要一杯带酒酿的奶茶，少糖温热的，适合冬天喝的那种", "attributes": {"drink_name": "桂花酒酿奶茶", "options": {"size": ["中杯"], "sugar": ["少糖", "正常甜"], "ice": ["常温", "温热"], "topping": ["酒酿"]}}}
+{"query": "有没有桂花味的奶茶推荐？最好加酒酿，中杯少糖常温", "attributes": {"drink_name": "桂花酒酿奶茶", "options": {"size": ["中杯"], "sugar": ["少糖", "正常甜"], "ice": ["常温", "温热"], "topping": ["酒酿"]}}}
+{"query": "来一杯暖暖的奶茶吧，不要冰的，加酒酿，甜度低", "attributes": {"drink_name": "桂花酒酿奶茶", "options": {"size": ["中杯"], "sugar": ["少糖", "正常甜"], "ice": ["常温", "温热"], "topping": ["酒酿"]}}}
+{"query": "想要一杯带咖啡香的奶茶，有点椰子味的那种，少糖少冰", "attributes": {"drink_name": "椰香咖啡奶茶", "options": {"size": ["中杯", "大杯"], "sugar": ["少糖", "正常甜"], "ice": ["少冰", "正常冰"]}}}
+{"query": "推荐一款有咖啡和椰香混合的奶茶，中杯正常甜就好", "attributes": {"drink_name": "椰香咖啡奶茶", "options": {"size": ["中杯", "大杯"], "sugar": ["少糖", "正常甜"], "ice": ["少冰", "正常冰"]}}}
+{"query": "有没有椰香浓郁一点的奶茶？可以加咖啡的，大杯少冰", "attributes": {"drink_name": "椰香咖啡奶茶", "options": {"size": ["中杯", "大杯"], "sugar": ["少糖", "正常甜"], "ice": ["少冰", "正常冰"]}}}
+{"query": "想要一杯温热的奶茶，少糖，加燕麦，感觉暖暖的很舒服", "attributes": {"drink_name": "燕麦红枣奶茶", "options": {"size": ["中杯"], "sugar": ["少糖", "正常甜"], "ice": ["常温", "温热"], "topping": ["燕麦"]}}}
+{"query": "有没有含燕麦的奶茶推荐？最好是中杯少糖的，我喜欢口感丰富的", "attributes": {"drink_name": "燕麦红枣奶茶", "options": {"size": ["中杯"], "sugar": ["少糖", "正常甜"], "ice": ["常温", "温热"], "topping": ["燕麦"]}}}
+{"query": "最近喜欢喝红枣味的热饮，正常甜就好，不要太冰", "attributes": {"drink_name": "燕麦红枣奶茶", "options": {"size": ["中杯"], "sugar": ["少糖", "正常甜"], "ice": ["常温", "温热"], "topping": ["燕麦"]}}}

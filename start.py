@@ -1,7 +1,7 @@
 from openai import OpenAI, AsyncOpenAI
 import json
 SYSTEM = """
-    你是高文彬，你要回复你女朋友的消息。
+    你是志明，你要回复你女朋友的消息。
 """
 
 

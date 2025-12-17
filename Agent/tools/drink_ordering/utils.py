@@ -1,44 +1,46 @@
+from langchain.tools import tool
 import json
 import os
 from pathlib import Path
-
-import chromadb
-from chromadb import Documents, EmbeddingFunction, Embeddings
-from chromadb.utils import embedding_functions
-from langchain.tools import tool
-from langchain_community.embeddings import HuggingFaceEmbeddings
 from tqdm import tqdm
+import chromadb
+from langchain_huggingface import HuggingFaceEmbeddings
+from chromadb.utils import embedding_functions
+from chromadb import EmbeddingFunction, Documents, Embeddings
 
+THIS_DIR = Path(__file__).resolve().parent
+PROJECT_ROOT = THIS_DIR.parents[2]
 
-BASE_DIR = Path(__file__).resolve().parents[3]
-TOOLS_DIR = Path(__file__).resolve().parent
-EMBEDDING_MODEL_DIR = BASE_DIR.parent / "RAG" / "embedding_model" / "bge-m3"
+DEFAULT_BGE_MODEL_PATH = PROJECT_ROOT / "Models" / "Base_models" / "embedding_model" / "bge-m3"
+BGE_MODEL_PATH = os.environ.get("BGE_MODEL_PATH", str(DEFAULT_BGE_MODEL_PATH))
+DRINK_DB_PATH = os.environ.get("DRINK_DB_PATH", str(THIS_DIR / "drink_db"))
+DRINKS_JSON_PATH = os.environ.get("DRINKS_JSON_PATH", str(THIS_DIR / "drinks.json"))
 
 
 class BGEEmbedding(EmbeddingFunction):
-        def __call__(self, input: Documents) -> Embeddings:
-            return hf_emb.embed_documents(input)
-        
-        def query(self, query: str) -> Embeddings:
-            return hf_emb.embed_query(query)
+    def __call__(self, input: Documents) -> Embeddings:
+        return hf_emb.embed_documents(input)
+    
+    def query(self, query: str) -> Embeddings:
+        return hf_emb.embed_query(query)
 
 hf_emb = HuggingFaceEmbeddings(
-        model_name=str(EMBEDDING_MODEL_DIR),
-        model_kwargs={"device": "cpu"},
-        encode_kwargs={"normalize_embeddings": True}
-    )
+    model_name=BGE_MODEL_PATH,
+    model_kwargs={"device": "cpu"},
+    encode_kwargs={"normalize_embeddings": True}
+)
 
-client = chromadb.PersistentClient(path=str(TOOLS_DIR / "drink_db"))
+client = chromadb.PersistentClient(path=DRINK_DB_PATH)
 db = client.get_collection("drink_menu")
 embed_func = BGEEmbedding()
 
 def build_drink_db():
     # 1. 加载饮品 JSON 数据
-    with open("drinks.json", "r", encoding="utf-8") as f:
+    with open(DRINKS_JSON_PATH, "r", encoding="utf-8") as f:
         drinks = json.load(f)
 
     # 2. 初始化 Chroma 客户端（存储到本地目录 ./drink_db）
-    client = chromadb.PersistentClient(path="./drink_db")
+    client = chromadb.PersistentClient(path=DRINK_DB_PATH)
 
     # 3. 设置 Embedding 模型
     embed_func = BGEEmbedding()
@@ -94,15 +96,15 @@ def format_drink_list(drink_list):
                 drink_dict[key] = value
         formatted_list.append(drink_dict)
 
-    for i, drink in enumerate(formatted_list, 1):
-        print(f"=== 奶茶推荐 {i} ===")
-        print(f"名称: {drink.get('饮品名称', '')}")
-        print(f"介绍: {drink.get('介绍', '')}")
-        if 'size' in drink: print(f"容量: {drink['size']}")
-        if 'sugar' in drink: print(f"糖度: {drink['sugar']}")
-        if 'ice' in drink: print(f"温度/冰块: {drink['ice']}")
-        if 'topping' in drink: print(f"配料: {drink.get('topping', '无')}")
-        print("\n")
+    # for i, drink in enumerate(formatted_list, 1):
+        # print(f"=== 奶茶推荐 {i} ===")
+        # print(f"名称: {drink.get('饮品名称', '')}")
+        # print(f"介绍: {drink.get('介绍', '')}")
+        # if 'size' in drink: print(f"容量: {drink['size']}")
+        # if 'sugar' in drink: print(f"糖度: {drink['sugar']}")
+        # if 'ice' in drink: print(f"温度/冰块: {drink['ice']}")
+        # if 'topping' in drink: print(f"配料: {drink.get('topping', '无')}")
+        # print("\n")
     return formatted_list
 if __name__ == "__main__":
     drinks = query_drink_db("我想喝点苦苦的东西", top_k=5)

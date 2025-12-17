@@ -1,0 +1,23 @@
+# Secrets / local env
+.env
+.env.*
+!.env.example
+
+# Key material
+*.pem
+*.key
+*.p12
+*.pfx
+*.crt
+*.cer
+*.der
+
+# Python
+__pycache__/
+*.py[cod]
+
+# Virtualenv
+.venv/
+venv/
+env/
+

@@ -1,34 +1,33 @@
-import os
-from pathlib import Path
-from typing import TypedDict
-
-from langchain import hub
-from langchain.agents import AgentExecutor, create_react_agent
-from langchain.callbacks.base import BaseCallbackHandler
 from langchain_openai import ChatOpenAI
 from langgraph.graph import StateGraph
+from langchain import hub
+from langchain.agents import create_react_agent, AgentExecutor
+from langchain.callbacks.base import BaseCallbackHandler
+import os
 
-from agent.prompts import chat_prompt, router_prompt, style_prompt
-from tools import drink_ordering, get_current_time, get_weather, web_search
+from agent.prompts import style_prompt, router_prompt, chat_prompt
+from tools import get_weather, web_search, get_current_time, drink_ordering
+from typing import TypedDict
 
-BASE_DIR = Path(__file__).resolve().parents[2]
-
-openai_api_key = os.getenv("OPENAI_API_KEY", "EMPTY")
-openai_api_base = os.getenv("OPENAI_API_BASE", "http://localhost:8888/v1")
-model_name = os.getenv(
+openai_api_key = os.environ.get("OPENAI_API_KEY", "EMPTY")
+openai_api_base = os.environ.get("OPENAI_API_BASE", "http://localhost:8888/v1")
+model_name = os.environ.get(
     "WECHATROBOT_MODEL_PATH",
-    str(BASE_DIR / "Saved_models" / "rlhf" / "your_model_name_V3" / "merged"),
+    "Models/Saved_models/rlhf/4B_lora_PPO_V3/merged",
 )
 
-router_openai_api_key = os.getenv(
-    "ROUTER_OPENAI_API_KEY",
-    "ROUTER_KEY_PLACEHOLDER",
+router_openai_api_base = os.environ.get(
+    "ROUTER_OPENAI_API_BASE", "https://dashscope.aliyuncs.com/compatible-mode/v1"
 )
-router_openai_api_base = os.getenv(
-    "ROUTER_OPENAI_API_BASE",
-    "https://dashscope.aliyuncs.com/compatible-mode/v1",
+router_model_name = os.environ.get("ROUTER_MODEL_NAME", "qwen-max")
+router_openai_api_key = os.environ.get("ROUTER_OPENAI_API_KEY") or os.environ.get(
+    "DASHSCOPE_API_KEY"
 )
-router_model_name = os.getenv("ROUTER_MODEL_NAME", "qwen-max")
+if not router_openai_api_key and not router_openai_api_base.startswith("http://localhost"):
+    raise RuntimeError(
+        "环境变量 ROUTER_OPENAI_API_KEY 未设置（可改用 DASHSCOPE_API_KEY，或将 ROUTER_OPENAI_API_BASE 指向本地服务）"
+    )
+router_openai_api_key = router_openai_api_key or "EMPTY"
 
 
 tools = [get_weather, web_search, get_current_time, drink_ordering]

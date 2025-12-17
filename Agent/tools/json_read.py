@@ -42,8 +42,6 @@ def to_tool_spec(tool_obj):
         }
     }
 
-# 用法：假设 get_weather 是 @tool 返回的对象
-
 
 
 if __name__ == "__main__":
